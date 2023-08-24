@@ -1,0 +1,90 @@
+.lobby:hover {
+
+    background-color: #9747FF;
+    transition: all ease-in-out 500ms;
+}
+
+
+
+.showCourseDetail {
+    transition: all ease-in-out 1s;
+
+    opacity: 1;
+}
+
+
+.hideCourseDetail {
+    transition: all ease-in-out 1s;
+
+    opacity: 0;
+}
+
+@media screen and (max-height:768px) {
+    /* .ncbtapproved h2 {
+
+        font-size: 48px;
+        line-height: 3rem;
+
+    } */
+
+    .ncbtapproved .ncbt-desk-img {
+
+        width: 300px;
+        height: 250px
+    }
+
+}
+
+/* @media screen and (max-width:768px) {
+
+    .ncbtapproved .ncbt-desk-img {
+
+        width: 140px;
+        height: 140px
+    }
+}
+
+
+@media screen and (min-height:768px) {
+
+
+    .ncbtapproved h2 {
+
+        font-size: 61px;
+        line-height: 4.5rem;
+
+    }
+
+    .ncbtapproved .ncbt-desk-img {
+
+        width: 323px;
+        height: 323px
+    }
+}
+
+
+@media screen and (min-width:1921px) {
+
+
+    .ncbtapproved h2 {
+
+        font-size: 80px;
+        line-height: 4.5rem;
+
+    }
+
+    .ncbtapproved .ncbt-desk-img {
+
+        width: 323px;
+        height: 323px
+    }
+
+
+    .ncbtapproved .ncbt-desk-img {
+
+        width: 400px;
+        height: 400px
+    }
+
+
+} */

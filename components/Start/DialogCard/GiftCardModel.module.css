@@ -1,0 +1,50 @@
+.giftCardBg {
+
+    background: #D4D4D4;
+}
+
+
+.giftCardActive {
+    background: #FFFFFF;
+    /* Purple */
+    border-top: 5px solid #9747FF;
+    box-shadow: 24px 12px 28px rgba(0, 0, 0, 0.3);
+}
+
+.formbtnbg {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 48px;
+}
+
+/* media query for height */
+
+
+@media (max-height:750px) {
+
+    .fromFormMain input {
+
+        padding: 3px 10px 3px 10px !important;
+    }
+
+    .fromFormComp {
+        padding: 40px 15px 0px 15px !important;
+    }
+
+    .toFormtitle {
+
+        margin: 0px 24px 0px 24px !important;
+
+        max-height: 180px !important;
+    }
+
+    .addgiftCardBtn {
+
+        padding: 5px 20px 5px 20px !important;
+    }
+
+    .giftImg {
+
+        width: 55px !important;
+        height: 55px !important;
+    }
+}

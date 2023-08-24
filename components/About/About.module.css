@@ -1,0 +1,24 @@
+.aboutFadeAnimation {
+    opacity: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: opacity 1s;
+}
+
+
+/* .aboutFadeAnimation {
+
+    overflow-y: scroll !important;
+    height: auto !important;
+
+} */
+
+
+@media (max-height:450px) {
+
+    .aboutFadeAnimation p {
+
+        padding-bottom: 0px !important;
+    }
+}

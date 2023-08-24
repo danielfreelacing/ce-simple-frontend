@@ -1,0 +1,4035 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+
+body {
+  /* ... */
+  font-family: 'Barlow', sans-serif;
+  font-style: normal;
+}
+
+textarea {
+
+  background-color: #FFFFFF !important;
+}
+
+
+.Boxshadow {
+  box-shadow: 0px 4px 52px 4px rgba(10, 6, 22, 0.08);
+}
+
+
+.image-card img {
+  -webkit-transition: 1s ease;
+  transition: 1s ease;
+  overflow: hidden;
+}
+
+.zoom-effect-container:hover {
+  background: rgba(128, 128, 128, 0.164);
+  animation: bgsmooth 2s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes bgsmooth {
+
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+.zoom-effect-container:hover .image-card img {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+
+}
+
+.hide {
+  display: none;
+}
+
+.zoom-effect-container:hover .hide {
+  display: block;
+  animation: 500ms anim-lineUp ease;
+  overflow: hidden;
+}
+
+.zoom-effect-container:hover .lineUp {
+  animation: 500ms anim-lineUp ease;
+  overflow: hidden;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+    overflow: hidden;
+  }
+
+
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    overflow: hidden;
+  }
+
+
+}
+
+
+.zoom-effect-container:hover h3 {
+  color: purple;
+  font-style: normal;
+  font-weight: 500;
+}
+
+/* .zoom {
+  transition: 2s ease;
+} */
+
+.zoom:hover {
+  animation: zoom-in 2s;
+  animation-fill-mode: forwards;
+}
+
+.hiddenoverflow {
+  overflow: hidden;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(1)
+  }
+
+  to {
+    transform: scale(1.5)
+  }
+}
+
+@media (max-width:1366px) {
+
+  .courseDis p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width:1600px) {
+
+  .courseDis p {
+    font-size: 12px !important;
+  }
+}
+
+@media (max-width:1920px) {
+
+  .courseDis p {
+    font-size: 13px !important;
+    line-height: 140%;
+  }
+}
+
+p {
+  @apply text-[16px];
+}
+
+/* body {
+    font-family: "apple";
+  } */
+
+ul {
+  @apply list-disc;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+
+
+.Boxshadow {
+  box-shadow: 0px 4px 52px 4px rgba(10, 6, 22, 0.08);
+}
+
+.ncbtmbShadow {
+
+  filter: drop-shadow(0px 12px 28px rgba(0, 0, 0, 0.3));
+}
+
+.image-card img {
+  -webkit-transition: 500ms ease;
+  transition: 500ms ease;
+  overflow: hidden;
+}
+
+.zoom-effect-container:hover {
+  background: rgba(128, 128, 128, 0.164);
+  animation: bgsmooth 500ms;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes bgsmooth {
+
+  from {
+    opacity: 0.8;
+  }
+
+  to {
+    opacity: 1;
+  }
+
+}
+
+.zoom-effect-container:hover .image-card img {
+  -ms-transform: scale(1.1);
+  /* IE 9 */
+  -webkit-transform: scale(1.1);
+  /* Safari 3-8 */
+  transform: scale(1.1);
+  transition: all ease-in-out 500ms;
+
+}
+
+.hide {
+  display: none;
+}
+
+.zoom-effect-container:hover .hide {
+  display: block;
+  animation: 500ms anim-lineUp ease;
+  overflow: hidden;
+}
+
+.zoom-effect-container:hover .lineUp {
+  animation: 500ms anim-lineUp ease;
+  overflow: hidden;
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+    overflow: hidden;
+  }
+
+
+
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    overflow: hidden;
+  }
+
+
+}
+
+
+.zoom-effect-container:hover h3 {
+  color: purple;
+}
+
+/* .zoom {
+  transition: 2s ease;
+} */
+
+.zoom:hover {
+  animation: zoom-in 500ms;
+  animation-fill-mode: forwards;
+}
+
+.hiddenoverflow {
+  overflow: hidden;
+}
+
+@keyframes zoom-in {
+  from {
+    transform: scale(1)
+  }
+
+  to {
+    transform: scale(1.5)
+  }
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 1px;
+  height: 0.5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: gray;
+  border-radius: 10px;
+}
+
+.anmationEnd {
+  position: absolute;
+  bottom: 0;
+  display: none !important;
+}
+
+.instructorBorder {
+
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* suraj css start */
+/* tooltips section css */
+.tooltip {
+  position: relative;
+  /* display: inline-block;
+  border-bottom: 1px dotted black; */
+}
+
+.tooltip>.tooltiptext {
+  visibility: hidden;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 4px 10px;
+  top: -30px;
+  right: -20%;
+  position: absolute;
+  /* z-index: 99; */
+}
+
+.tooltip:hover>.tooltiptext {
+  visibility: visible !important;
+}
+
+.ecardBtn:hover .ecardRotate {
+  transform: rotate(15deg);
+  transition: 500ms;
+}
+
+.ecardBtn .ecardRotate {
+  /* transform: rotate(45deg); */
+  transition: 500ms;
+}
+
+.ecardBtn .ecardImgAni {
+
+  transition: 500ms;
+}
+
+.ecardBtn:hover .ecardImgAni {
+  /* position: absolute;
+  right: -20px; */
+  /* padding-left: 20px; */
+  transform: translateX(12px);
+  transition: 500ms;
+}
+
+.giftCardBg {
+  background: linear-gradient(90deg, rgba(233, 233, 233, 1) 75%, rgba(157, 157, 157, 1) 100%);
+  /* box-shadow: rgb(0 0 0 / 20%) 39px 15px 9px -22px; */
+  box-shadow: rgb(0 0 0 / 20%) 44px 1px 14px -12px;
+  border-top: 5px solid #9747FF;
+  background: #FFFFFF;
+  z-index: 10;
+
+}
+
+.giftCardActive {
+  background: #D4D4D4;
+  box-shadow: rgb(0 0 0 / 21%) -107px -69px 15px -85px inset;
+  ;
+}
+
+.boxShadow {
+  box-shadow: rgb(0 0 0 / 21%) 45px 3px 16px -19px inset;
+  z-index: 20;
+}
+
+.imgGray .ecardImgBox {
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+}
+
+/* ncbtmbselectbox */
+
+.ncbtmbDropDown {
+
+  width: 320px !important;
+
+}
+
+
+input {
+  background-color: white;
+}
+
+.nctbmbmtTop {
+
+  margin-top: 25px;
+}
+
+/* home message padding */
+
+.homepdmng {
+  padding-bottom: 112px;
+}
+
+/* gift shipping default  */
+.giftShipping {
+  margin-top: 3px;
+  font-size: 13px;
+  line-height: 100%;
+}
+
+/* responsive min height  */
+
+/* minheight screen size image  */
+
+@media (max-height:992px) {
+
+  .cartImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .logoImg {
+
+    width: 360px;
+    height: 320px;
+    margin-top: 40px;
+  }
+
+  .ncbtmbImg {
+
+    height: 130px !important;
+    width: 130px !important;
+    margin-top: 14px !important;
+    margin-bottom: 5px !important;
+
+  }
+
+  .conciergeImg {
+
+    height: 75px !important;
+    width: 75px !important;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 50px !important;
+    width: 50px !important;
+
+  }
+
+  .teacherLounge {
+    height: 70px !important;
+    width: 50px !important;
+
+  }
+
+  .iamBackImg {
+    height: 100px !important;
+    width: 100px !important;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 120px !important;
+    height: 120px !important;
+
+  }
+
+  .doorGate {
+    width: 58px !important;
+    height: 120px !important;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 1px !important;
+    left: 22px !important;
+  }
+
+  /* .gateHandleMainDiv {
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    top: 43px;
+    left: 48px;
+  } */
+
+  .gateHandleMainDiv {
+
+    width: 3px !important;
+    height: 15px !important;
+    position: absolute !important;
+    top: 48px !important;
+    left: 43px !important;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 230px !important;
+    height: 230px !important;
+  }
+}
+
+@media (max-height:840px) {
+  .cartImage {
+    width: 90px;
+    height: 90px;
+  }
+
+  .logoImg {
+
+    width: 230px !important;
+    height: 80px !important;
+    margin-top: 40px !important;
+  }
+
+  .ncbtmbImg {
+
+    height: 100px !important;
+    width: 100px !important;
+    margin-top: 25px !important;
+    margin-bottom: 5px !important;
+
+  }
+
+  .conciergeImg {
+
+    height: 75px !important;
+    width: 75px !important;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 50px !important;
+    width: 50px !important;
+
+  }
+
+  .teacherLounge {
+    height: 70px !important;
+    width: 50px !important;
+
+  }
+
+  .iamBackImg {
+    height: 65px !important;
+    width: 70px !important;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 120px !important;
+    height: 120px !important;
+
+  }
+
+  .doorGate {
+    width: 58px !important;
+    height: 120px !important;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 1px !important;
+    left: 22px !important;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 3px !important;
+    height: 3px !important;
+    position: absolute !important;
+    top: 45px !important;
+    left: 35px !important;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 175px !important;
+    height: 175px !important;
+  }
+}
+
+@media (max-height:750px) {
+  .cartImage {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logoImg {
+    width: 230px !important;
+    height: 80px !important;
+    margin-top: 40px !important;
+
+  }
+
+  .ncbtmbImg {
+
+    height: 70px !important;
+    width: 70px !important;
+    margin-top: 20px !important;
+    margin-bottom: 0px !important;
+
+  }
+
+  .conciergeImg {
+
+    height: 50px !important;
+    width: 50px !important;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 50px !important;
+    width: 50px !important;
+
+  }
+
+  .teacherLounge {
+    height: 55px !important;
+    width: 35px !important;
+
+  }
+
+  .iamBackImg {
+    height: 70px;
+    width: 70px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 100px !important;
+    height: 100px !important;
+
+  }
+
+  .doorGate {
+    width: 56px !important;
+    height: 94px !important;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 3px !important;
+    left: 16px !important;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 2px !important;
+    height: 3px !important;
+    position: absolute !important;
+    top: 38px !important;
+    left: 40px !important;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 160px !important;
+    height: 160px !important;
+  }
+}
+
+@media (max-height:650px) {
+
+  .cartImage {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logoImg {
+    width: 200px !important;
+    height: 65px !important;
+    margin-top: 40px !important;
+  }
+
+  .ncbtmbImg {
+    height: 70px !important;
+    width: 70px !important;
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+
+  }
+
+  .conciergeImg {
+    height: 50px !important;
+    width: 50px !important;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 50px !important;
+    width: 50px !important;
+
+  }
+
+  .teacherLounge {
+    height: 60px !important;
+    width: 35px !important;
+
+  }
+
+  .iamBackImg {
+    height: 70px;
+    width: 70px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 100px !important;
+    height: 100px !important;
+
+  }
+
+  .doorGate {
+    width: 70px !important;
+    height: 95px !important;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 2px !important;
+    left: 9px !important;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 2px !important;
+    height: 3px !important;
+    position: absolute !important;
+    top: 38px !important;
+    left: 45px !important;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 140px !important;
+    height: 140px !important;
+  }
+
+
+}
+
+@media (max-height:600px) {
+
+  .cartImage {
+    width: 75px;
+    height: 75px;
+  }
+
+  .logoImg {
+    width: 177px !important;
+    height: 60px !important;
+    margin-top: 40px !important;
+  }
+
+  .ncbtmbImg {
+
+    height: 60px !important;
+    width: 60px !important;
+    margin-top: 20px !important;
+    margin-bottom: 0px !important;
+
+  }
+
+  .conciergeImg {
+
+    height: 35px !important;
+    width: 35px !important;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 50px !important;
+    width: 50px !important;
+
+  }
+
+  .teacherLounge {
+    height: 40px !important;
+    width: 30px !important;
+
+  }
+
+  .iamBackImg {
+    height: 70px;
+    width: 70px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 70px !important;
+    height: 70px !important;
+
+  }
+
+  .doorGate {
+    width: 40px !important;
+    height: 67px !important;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 1px !important;
+    left: 11px !important;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 2px !important;
+    height: 3px !important;
+    position: absolute !important;
+    top: 28px !important;
+    left: 25px !important;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 196px !important;
+    height: 97px !important;
+  }
+
+  .ncbtmbDropDown {
+
+    width: 220px !important;
+
+  }
+
+
+}
+
+@media (max-height:500px) {
+
+  .cartImage {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logoImg {
+    width: 150px !important;
+    height: 50px !important;
+    margin-top: 40px !important;
+
+  }
+
+  .ncbtmbImg {
+
+    height: 40px !important;
+    width: 40px !important;
+    margin-top: 10px !important;
+    margin-bottom: 0px !important;
+
+  }
+
+  .conciergeImg {
+
+    height: 25px !important;
+    width: 25px !important;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 50px !important;
+    width: 50px !important;
+
+  }
+
+  .teacherLounge {
+    height: 25px !important;
+    width: 20px !important;
+
+  }
+
+  .iamBackImg {
+    height: 70px;
+    width: 70px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 70px !important;
+    height: 70px !important;
+
+  }
+
+  .doorGate {
+    width: 40px !important;
+    height: 67px !important;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 1px !important;
+    left: 11px !important;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 2px !important;
+    height: 3px !important;
+    position: absolute !important;
+    top: 28px !important;
+    left: 25px !important;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .nctbmbmtTop {
+
+    margin-top: 0px !important;
+  }
+
+
+}
+
+@media (max-height:400px) {
+
+  .cartImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logoImg {
+    width: 120px !important;
+    height: 40px !important;
+    margin-top: 40px !important;
+
+  }
+
+  .ncbtmbImg {
+    height: 30px !important;
+    width: 30px !important;
+    margin-top: 10px !important;
+    margin-bottom: 5px !important;
+
+  }
+
+  .conciergeImg {
+
+    height: px !important;
+    width: px !important;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 50px !important;
+    width: 50px !important;
+
+  }
+
+  .teacherLounge {
+    height: 24px !important;
+    width: 16px !important;
+
+  }
+
+  .iamBackImg {
+    height: 50px !important;
+    width: 50px !important;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 40px !important;
+    height: 40px !important;
+
+  }
+
+  .doorGate {
+    width: 19px !important;
+    height: 38px !important;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 1px !important;
+    left: 8px !important;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 1.5px !important;
+    height: 2px !important;
+    position: absolute !important;
+    top: 13px !important;
+    left: 13px !important;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 140px;
+    height: 140px
+  }
+
+
+}
+
+@media (max-height:250px) {
+
+  .cartImage {
+    width: 60px;
+    height: 60px;
+  }
+
+  .logoImg {
+    width: 150px !important;
+    height: 50px !important;
+    margin-top: 40px !important;
+
+  }
+
+  .ncbtmbImg {
+    height: 20px !important;
+    width: 20px !important;
+    margin-top: 0px !important;
+    margin-bottom: 0px !important;
+
+  }
+
+  .conciergeImg {
+    height: 15px !important;
+    width: 15px !important;
+
+  }
+
+  .giftShoppeImg {
+    height: 50px !important;
+    width: 50px !important;
+
+  }
+
+  .teacherLounge {
+    height: 10px !important;
+    width: 9px !important;
+
+  }
+
+  .iamBackImg {
+    height: 40px !important;
+    width: 40px !important;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 40px !important;
+    height: 40px !important;
+
+  }
+
+  .doorGate {
+    width: 19px !important;
+    height: 38px !important;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 1px !important;
+    left: 8px !important;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 1.5px !important;
+    height: 2px !important;
+    position: absolute !important;
+    top: 13px !important;
+    left: 13px !important;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 140px;
+    height: 140px
+  }
+
+
+}
+
+/* minheight screen size font  */
+
+@media (max-height:840px) and (min-width:992px) {
+
+  .cartImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .extxlsmallf {
+    font-size: 12px !important;
+  }
+
+  .extsmallf {
+    font-size: 13px !important;
+  }
+
+  .minismallf {
+    font-size: 15px !important;
+  }
+
+  .smallf {
+    letter-spacing: 0.5px !important;
+    font-size: 12px !important;
+    line-height: 100% !important;
+  }
+
+  .mediumf {
+    font-size: 16px !important;
+  }
+
+  .largef {
+    font-size: 20px !important;
+
+  }
+
+  .extlargef {
+    font-size: 20px !important;
+  }
+
+  .dubblelargef {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+
+  .dubblelargefXXL {
+    font-size: 28px !important;
+  }
+
+  .triplelargef {
+    font-size: 24px !important;
+    letter-spacing: 1px !important;
+    font-weight: 600 !important;
+    line-height: 30px !important;
+
+  }
+
+  .fourxllargef {
+    font-size: 31px !important;
+    line-height: 32px !important;
+  }
+
+  .fivexllargef {
+    font-size: 64px !important;
+  }
+
+  .superlargef {
+    font-size: 80px !important;
+    letter-spacing: -1px !important;
+    line-height: 90px !important;
+  }
+
+  .startFont {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    margin-top: 20px !important;
+
+  }
+
+  .nctbmbmtTop {
+    margin-top: 20px !important;
+  }
+}
+
+/* min-width-992 and max-height 840px */
+
+@media (max-height:840px) and (min-width:992px) {
+
+  .giftShipping {
+    font-size: 13px !important;
+    line-height: 100%;
+    margin-bottom: 3px;
+  }
+
+  .extxlsmallf {
+    font-size: 12px !important;
+  }
+
+  .extsmallf {
+    font-size: 13px !important;
+  }
+
+  .minismallf {
+    font-size: 15px !important;
+  }
+
+  .smallf {
+    letter-spacing: 0.5px !important;
+    font-size: 12px !important;
+    line-height: 100% !important;
+  }
+
+  .mediumf {
+    font-size: 16px !important;
+  }
+
+  .largef {
+    font-size: 20px !important;
+
+  }
+
+  .extlargef {
+    font-size: 20px !important;
+  }
+
+  .dubblelargef {
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+
+  .triplelargef {
+    font-size: 24px !important;
+    letter-spacing: 1px !important;
+    font-weight: 600 !important;
+    line-height: 30px !important;
+
+  }
+
+  .fourxllargef {
+    font-size: 26px !important;
+    line-height: 100% !important;
+  }
+
+  .superlargef {
+    font-size: 80px !important;
+    letter-spacing: -1px !important;
+    line-height: 90px !important;
+  }
+
+  .startFont {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    margin-top: 20px !important;
+
+  }
+
+  .nctbmbmtTop {
+    margin-top: 20px !important;
+  }
+}
+
+@media (max-height:750px) and (min-width:992px) {
+
+  .giftShipping {
+    font-size: 12px !important;
+    line-height: 50% !important;
+
+  }
+
+  .extxlsmallf {
+    font-size: 12px !important;
+  }
+
+  .extsmallf {
+    font-size: 13px !important;
+  }
+
+  .minismallf {
+    font-size: 15px !important;
+  }
+
+  .smallf {
+    letter-spacing: 0.5px !important;
+    font-size: 12px !important;
+    line-height: 100% !important;
+  }
+
+  .mediumf {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+  }
+
+  .largef {
+    font-size: 20px !important;
+  }
+
+  .extlargef {
+    font-size: 22px !important;
+  }
+
+  .dubblelargef {
+    font-size: 24px !important;
+    line-height: 28px !important;
+  }
+
+  .dubblelargefXXL {
+    font-size: 26px !important;
+  }
+
+  .triplelargef {
+    font-size: 24px !important;
+    letter-spacing: 1px !important;
+    font-weight: 500 !important;
+    line-height: 18px !important;
+
+  }
+
+  .triplelargefXXXL {
+    font-size: 40px !important;
+    line-height: 50px !important;
+    font-weight: 400 !important;
+  }
+
+  .fourxllargef {
+    font-size: 16px;
+    /* line-height: 19px; */
+    line-height: 100% !important;
+
+  }
+
+  .fivexllargef {
+    font-size: 52px !important;
+  }
+
+  .superlargef {
+    font-size: 55px !important;
+    letter-spacing: 0.001em !important;
+    line-height: 65px !important;
+  }
+
+  .startFont {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    margin-top: 20px !important;
+
+  }
+
+  .nctbmbmtTop {
+    margin-top: 8px !important;
+    /* padding-left: 7px !important;
+    padding-right: 7px !important; */
+
+    padding: 2px 7px 2px 7px !important;
+  }
+
+
+}
+
+@media (max-height:650px) and (min-width:992px) {
+
+  .extxlsmallf {
+    font-size: 12px !important;
+  }
+
+  .extsmallf {
+    font-size: 13px !important;
+  }
+
+  .minismallf {
+    font-size: 15px !important;
+  }
+
+  .smallfXL {
+
+    font-size: 11px !important;
+  }
+
+  .smallf {
+    font-size: 12px !important;
+    line-height: 100% !important;
+  }
+
+  .mediumf {
+    font-size: 15px !important;
+  }
+
+  .largef {
+    font-size: 15px !important;
+  }
+
+  .extlargef {
+    font-size: 16px !important;
+  }
+
+  .dubblelargef {
+    font-size: 20px !important;
+    line-height: 30px !important;
+  }
+
+  .dubblelargefXXL {
+    font-size: 24px !important;
+  }
+
+  .triplelargef {
+    font-size: 18px !important;
+    letter-spacing: 1px !important;
+    font-weight: 600 !important;
+    line-height: 20px !important;
+
+  }
+
+  .triplelargefXXXL {
+    font-size: 35px !important;
+    line-height: 45px !important;
+    font-weight: 400 !important;
+  }
+
+  .fourxllargef {
+    font-size: 22px !important;
+    /* line-height: 32px !important; */
+    line-height: 100% !important;
+
+
+  }
+
+  .fivexllargef {
+    font-size: 42px !important;
+  }
+
+  .superlargef {
+    font-size: 55px !important;
+    letter-spacing: 0.001em !important;
+    line-height: 65px !important;
+  }
+
+  .startFont {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    margin-top: 20px !important;
+
+  }
+
+  .nctbmbmtTop {
+    margin-top: 15px !important;
+  }
+
+}
+
+@media (max-height:600px) and (min-width:992px) {
+
+  .giftShipping {
+    font-size: 11px !important;
+    line-height: 100%;
+  }
+
+  .extxlsmallf {
+    font-size: 12px !important;
+  }
+
+  .extsmallf {
+    font-size: 10px !important;
+  }
+
+  .minismallf {
+    font-size: 15px !important;
+  }
+
+  .smallfXL {
+
+    font-size: 11px !important;
+  }
+
+  .smallf {
+    font-size: 10px !important;
+    line-height: 14px;
+  }
+
+  .mediumf {
+    font-size: 12px !important;
+  }
+
+  .largef {
+    font-size: 14px !important;
+  }
+
+  .extlargef {
+    font-size: 16px !important;
+  }
+
+  .dubblelargef {
+    font-size: 16px !important;
+  }
+
+  .dubblelargefXXL {
+    font-size: 20px !important;
+  }
+
+  .triplelargef {
+    font-size: 18px !important;
+    letter-spacing: 1px !important;
+    font-weight: 600 !important;
+    line-height: 22px !important;
+
+  }
+
+  .triplelargefXXXL {
+    font-size: 34px !important;
+    line-height: 31px !important;
+    font-weight: 400 !important;
+  }
+
+  .fourxllargef {
+    font-size: 22px !important;
+    /* line-height: 28px !important; */
+    line-height: 100% !important;
+
+  }
+
+  .fivexllargef {
+    font-size: 38px !important;
+  }
+
+  .superlargef {
+    font-size: 30px !important;
+    letter-spacing: 0.001em !important;
+    line-height: 40px !important;
+  }
+
+  .startFont {
+    font-size: 30px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    margin-top: 20px !important;
+
+  }
+
+  .nctbmbmtTop {
+    margin-top: 3px !important;
+    /* padding-left: 7px !important;
+    padding-right: 7px !important; */
+
+    padding: 2px 7px 2px 7px !important;
+  }
+
+
+}
+
+@media (max-height:500px) and (min-width:992px) {
+
+  .giftShipping {
+    font-size: 10px !important;
+    line-height: 100%;
+  }
+
+  .extxlsmallf {
+    font-size: 12px !important;
+  }
+
+  .extsmallf {
+    font-size: 12px !important;
+  }
+
+  .minismallf {
+    font-size: 10px !important;
+  }
+
+  .smallfXL {
+
+    font-size: 10px !important;
+  }
+
+  .smallf {
+    font-size: 9px !important;
+  }
+
+  .mediumf {
+    font-size: 12px !important;
+  }
+
+  .largef {
+    font-size: 13px !important;
+  }
+
+  .extlargef {
+    font-size: 10px !important;
+  }
+
+  .dubblelargef {
+    font-size: 16px !important;
+  }
+
+  .dubblelargefXXL {
+    font-size: 18px !important;
+  }
+
+  .triplelargef {
+    font-size: 15px !important;
+    letter-spacing: 1px !important;
+    font-weight: 600 !important;
+    line-height: 25px !important;
+
+  }
+
+  .triplelargefXXXL {
+    font-size: 20px !important;
+    line-height: 22px !important;
+    font-weight: 400 !important;
+  }
+
+  .fourxllargef {
+    font-size: 18px !important;
+    /* line-height: 18px !important; */
+    line-height: 100% !important;
+
+  }
+
+  .fivexllargef {
+    font-size: 38px !important;
+  }
+
+  .superlargef {
+    font-size: 30px !important;
+    letter-spacing: 0.001em !important;
+    line-height: 40px !important;
+  }
+
+  .startFont {
+    font-size: 20px !important;
+    font-weight: 500 !important;
+    line-height: 20px !important;
+    margin-top: 20px !important;
+
+  }
+
+  /* nctbmb mttop */
+
+  .nctbmbmtTop {
+    margin-top: 3px !important;
+    padding: 2px 7px 2px 7px !important;
+  }
+
+
+}
+
+@media (max-height:485px) and (min-width:992px) {
+  .cartImage {
+    width: 40px !important;
+    height: 40px !important;
+  }
+
+  .giftShipping {
+    font-size: 9px !important;
+    line-height: 100%;
+  }
+
+  .extxlsmallf {
+    font-size: 8px !important;
+  }
+
+  .extsmallf {
+    font-size: 13px !important;
+  }
+
+  .minismallf {
+    font-size: 10px !important;
+  }
+
+  .smallfXL {
+
+    font-size: 9.5px !important;
+  }
+
+  .smallf {
+    font-size: 7px !important;
+  }
+
+  .mediumf {
+    font-size: 10px !important;
+  }
+
+  .largef {
+    font-size: 12px !important;
+  }
+
+  .extlargef {
+    font-size: 12px !important;
+  }
+
+  .dubblelargef {
+    font-size: 16px !important;
+  }
+
+  .dubblelargefXXL {
+    font-size: 16px !important;
+  }
+
+  .triplelargef {
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    font-weight: 600 !important;
+    line-height: 12px !important;
+
+  }
+
+  .fourxllargef {
+    font-size: 15px !important;
+    /* line-height: 17px !important; */
+    line-height: 100% !important;
+
+  }
+
+  .superlargef {
+    font-size: 20px !important;
+    letter-spacing: 0.001em !important;
+    line-height: 30px !important;
+  }
+
+  .fivexllargef {
+    font-size: 32px !important;
+  }
+
+  .startFont {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 12px !important;
+    margin-top: 10px !important;
+
+  }
+
+  /* menu boxsize */
+  /* .menuBoxsizebigMenu {
+    min-height: 200px;
+  }
+
+  .menuBoxsizesmallMenu {
+    min-height: 180px;
+  } */
+
+
+}
+
+@media (max-height:400px) and (min-width:992px) {
+
+  .giftShipping {
+    font-size: 7px !important;
+  }
+
+  .extxlsmallf {
+    font-size: 8px !important;
+  }
+
+  .extsmallf {
+    font-size: 13px !important;
+  }
+
+  .minismallf {
+    font-size: 10px !important;
+  }
+
+  .smallf {
+    font-size: 7px !important;
+  }
+
+  .mediumf {
+    font-size: 10px !important;
+  }
+
+  .largef {
+    font-size: 12px !important;
+  }
+
+  .extlargef {
+    font-size: 12px !important;
+  }
+
+  .dubblelargef {
+    font-size: 16px !important;
+  }
+
+  .dubblelargefXXL {
+    font-size: 16px !important;
+  }
+
+  .triplelargef {
+    font-size: 11px !important;
+    letter-spacing: 1px !important;
+    font-weight: 600 !important;
+    line-height: 12px !important;
+
+  }
+
+  .fourxllargef {
+    font-size: 15px !important;
+    /* line-height: 17px !important; */
+    line-height: 100% !important;
+
+  }
+
+  .superlargef {
+    font-size: 20px !important;
+    letter-spacing: 0.001em !important;
+    line-height: 30px !important;
+  }
+
+  .fivexllargef {
+    font-size: 35px !important;
+  }
+
+  .startFont {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 12px !important;
+    margin-top: 10px !important;
+
+  }
+
+  /* menu boxsize */
+  /* .menuBoxsizebigMenu {
+    min-height: 200px;
+  }
+
+  .menuBoxsizesmallMenu {
+    min-height: 180px;
+  } */
+
+
+}
+
+@media (max-height:250px) and (min-width:992px) {
+
+  .giftShipping {
+    font-size: 6px !important;
+  }
+
+  .extxlsmallf {
+    font-size: 8px !important;
+  }
+
+  .extsmallf {
+    font-size: 13px !important;
+  }
+
+  .minismallf {
+    font-size: 15px !important;
+  }
+
+  .smallf {
+    font-size: 11px !important;
+  }
+
+  .mediumf {
+    font-size: 20px !important;
+  }
+
+  .largef {
+    font-size: 15px !important;
+  }
+
+  .extlargef {
+    font-size: 25px !important;
+  }
+
+  .dubblelargef {
+    font-size: 16px !important;
+  }
+
+  .triplelargef {
+    font-size: 9px !important;
+    letter-spacing: 1px !important;
+    font-weight: 600 !important;
+    line-height: 8px !important;
+
+  }
+
+  .fourxllargef {
+    font-size: 40px !important;
+    /* line-height: 45px !important; */
+    line-height: 100% !important;
+
+  }
+
+  .superlargef {
+    font-size: 40px !important;
+    letter-spacing: 0.001em !important;
+    line-height: 45px !important;
+  }
+
+  .startFont {
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    line-height: 12px !important;
+    margin-top: 10px !important;
+
+  }
+
+  /* menu boxsize */
+  /* .menuBoxsizebigMenu {
+    min-height: 200px;
+  }
+
+  .menuBoxsizesmallMenu {
+    min-height: 180px;
+  } */
+
+
+}
+
+/* custom image size for small desktop device */
+@media only screen and (min-width:425px) {
+  .cartImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logoImg {
+    width: 230px;
+    height: 81px;
+    margin-top: 40px;
+
+  }
+
+  .ncbtmbImg {
+
+    height: 90px;
+    width: 90px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+
+  }
+
+  .conciergeImg {
+
+    height: 50px;
+    width: 50px;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 60px;
+    width: 60px;
+
+  }
+
+  .teacherLounge {
+    height: 60px;
+    width: 40px;
+
+  }
+
+  .iamBackImg {
+    height: 70px;
+    width: 70px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 94px;
+    height: 150px;
+
+  }
+
+  .doorGate {
+    width: 45px;
+    height: 150px;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 0px;
+    left: 18px;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 2px;
+    height: 3px;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 140px;
+    height: 140px
+  }
+
+
+}
+
+/* custom image size for small desktop device */
+@media only screen and (min-width:1024px) {
+
+  .cartImage {
+    width: 50px;
+    height: 50px;
+  }
+
+  .logoImg {
+    width: 230px;
+    height: 80px;
+    margin-top: 40px;
+
+  }
+
+  .ncbtmbImg {
+
+    height: 90px;
+    width: 90px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+
+  }
+
+  .conciergeImg {
+
+    height: 50px;
+    width: 50px;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 60px;
+    width: 60px;
+
+  }
+
+  .teacherLounge {
+    height: 60px;
+    width: 40px;
+
+  }
+
+  .iamBackImg {
+    height: 70px;
+    width: 70px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 94px;
+    height: 150px;
+
+  }
+
+  .doorGate {
+    width: 45px;
+    height: 150px;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 0px;
+    left: 18px;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 2px;
+    height: 3px;
+    position: absolute;
+    top: 70px;
+    left: 30px;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 160px;
+    height: 160px
+  }
+
+
+}
+
+/* custom image size for 1280 desktop device */
+@media only screen and (min-width:1280px) {
+
+  .cartImage {
+    width: 60px;
+    height: 60px;
+  }
+
+
+  .logoImg {
+    margin-top: 40px;
+    width: 214px;
+    height: 80px;
+
+  }
+
+  .ncbtmbImg {
+
+    height: 80px;
+    width: 80px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+
+  }
+
+  .conciergeImg {
+
+    height: 55px;
+    width: 55px;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 70px;
+    width: 70px;
+
+  }
+
+  .teacherLounge {
+    height: 60px;
+    width: 40px;
+
+  }
+
+  .iamBackImg {
+    height: 75px;
+    width: 75px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 94px;
+    height: 180px;
+
+  }
+
+  .doorGate {
+    width: 45px;
+    height: 180px;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 0px;
+    left: 18px;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 2px;
+    height: 3px;
+    position: absolute;
+    top: 80px;
+    left: 30px;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 170px;
+    height: 170px
+  }
+
+
+}
+
+/* custom image size for 1366 desktop device */
+@media only screen and (min-width:1366px) {
+
+  .cartImage {
+    width: 65px;
+    height: 65px;
+  }
+
+  .logoImg {
+    width: 243px;
+    height: 87px;
+    margin-top: 40px;
+  }
+
+  .ncbtmbImg {
+    height: 90px;
+    width: 80px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+
+  }
+
+  .conciergeImg {
+
+    height: 55px;
+    width: 55px;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 70px;
+    width: 70px;
+
+  }
+
+  .teacherLounge {
+    height: 60px;
+    width: 40px;
+
+  }
+
+  .iamBackImg {
+    height: 75px;
+    width: 75px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 120px;
+    height: 200px;
+
+  }
+
+  .doorGate {
+    width: 60px;
+    height: 200px;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 0px;
+    left: 23px;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 2px;
+    height: 3px;
+    position: absolute;
+    top: 90px;
+    left: 40px;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 200px;
+    height: 200px
+  }
+
+
+}
+
+/* custom image size for 1440 desktop device */
+@media only screen and (min-width:1440px) {
+
+  .cartImage {
+    width: 70px;
+    height: 70px;
+  }
+
+
+  .logoImg {
+    width: 276px;
+    height: 95px;
+    margin-top: 60px;
+  }
+
+  .ncbtmbImg {
+
+    height: 90px;
+    width: 100px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+
+  }
+
+  .conciergeImg {
+
+    height: 60px;
+    width: 60px;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 80px;
+    width: 80px;
+
+  }
+
+  .teacherLounge {
+    height: 55px;
+    width: 45px;
+    margin-bottom: 6px;
+
+  }
+
+  .iamBackImg {
+    height: 85px;
+    width: 85px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 180px;
+    height: 154px;
+
+
+  }
+
+  .doorGate {
+    width: 80px;
+    height: 155px;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 0px;
+    left: 39.5px;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 3px;
+    height: 3px;
+    position: absolute;
+    top: 60px;
+    left: 60px;
+  }
+
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 220px;
+    height: 220px
+  }
+
+}
+
+/* custom image size for 1600 desktop device */
+@media only screen and (min-width:1600px) {
+
+  .cartImage {
+    width: 75px;
+    height: 75px;
+  }
+
+
+  .logoImg {
+    width: 276px;
+    height: 95px;
+    margin-top: 60px;
+
+  }
+
+  .ncbtmbImg {
+
+    height: 100px;
+    width: 100px;
+    margin-top: 12px;
+    margin-bottom: 0px;
+
+  }
+
+  .conciergeImg {
+
+    height: 85px;
+    width: 85px;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 110px;
+    width: 110px;
+
+  }
+
+  .teacherLounge {
+    height: 90px;
+    width: 60px;
+
+  }
+
+  .iamBackImg {
+    height: 100px;
+    width: 100px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 150px;
+    height: 200px;
+
+  }
+
+  .doorGate {
+    width: 80px;
+    height: 140px;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 30px;
+    left: 25px;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 2px;
+    height: 3px;
+    position: absolute;
+    top: 60px;
+    left: 55px;
+  }
+
+
+}
+
+/* custom image size for 1920 desktop device */
+@media only screen and (min-width:1750px) {
+
+  .cartImage {
+    width: 78px;
+    height: 78px;
+  }
+
+
+  .logoImg {
+    width: 276px;
+    height: 95px;
+    margin-top: 60px;
+
+  }
+
+  .ncbtmbImg {
+
+    height: 80px;
+    width: 120px;
+    margin-top: 12px;
+    margin-bottom: 55px;
+
+  }
+
+  .conciergeImg {
+
+    height: 85px;
+    width: 85px;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 110px;
+    width: 110px;
+
+  }
+
+  .teacherLounge {
+    height: 90px;
+    width: 60px;
+
+  }
+
+  .iamBackImg {
+    height: 90px;
+    width: 90px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 170px;
+    height: 220px;
+
+  }
+
+  .doorGate {
+    width: 90px;
+    height: 160px;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 2px;
+    height: 3px;
+    position: absolute;
+    top: 70px;
+    left: 65px;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 275px;
+    height: 275px
+  }
+
+
+}
+
+/* custom image size for 1920 desktop device */
+@media only screen and (min-width:1850px) {
+
+  .cartImage {
+    width: 80px;
+    height: 80px;
+  }
+
+
+  .logoImg {
+    width: 276px;
+    height: 85px;
+    margin-top: 60px;
+  }
+
+  .ncbtmbImg {
+
+    height: 80px;
+    width: 120px;
+    margin-top: 12px;
+    margin-bottom: 55px;
+
+  }
+
+  .conciergeImg {
+
+    height: 85px;
+    width: 85px;
+
+  }
+
+  .giftShoppeImg {
+
+    height: 110px;
+    width: 110px;
+
+  }
+
+  .teacherLounge {
+    height: 90px;
+    width: 60px;
+
+  }
+
+  .iamBackImg {
+    height: 90px;
+    width: 90px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 170px;
+    height: 220px;
+
+  }
+
+  .doorGate {
+    width: 90px;
+    height: 160px;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .gateHandleMainDiv {
+
+    width: 2px;
+    height: 3px;
+    position: absolute;
+    top: 70px;
+    left: 65px;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 275px;
+    height: 275px
+  }
+
+
+}
+
+/* custom image size for 1920 desktop device */
+@media only screen and (min-width:1920px) {
+
+  .logoImg {
+    margin-top: 60px;
+    width: 360px;
+    height: 120px;
+
+  }
+
+  .ncbtmbImg {
+
+    height: 100px;
+    width: 140px;
+    margin-top: 12px;
+    margin-bottom: 55px;
+
+  }
+
+  .conciergeImg {
+
+    height: 85px;
+    width: 85px;
+    margin-bottom: 20px !important;
+
+  }
+
+  /* .giftShoppeImg {
+
+    height: 110px;
+    width: 110px;
+
+  } */
+
+  .teacherLounge {
+    height: 90px;
+    width: 60px;
+
+  }
+
+  .iamBackImg {
+    height: 90px;
+    width: 90px;
+
+  }
+
+  /* door image start here */
+
+
+  .doorFrame {
+    width: 260px;
+    height: 174px;
+
+  }
+
+  .doorGate {
+    width: 90px;
+    height: 176px;
+
+  }
+
+  .doorGateMainDiv {
+
+    position: absolute;
+    top: 0px;
+    left: 73px;
+  }
+
+  .gateHandleMainDiv {
+    width: 3px;
+    height: 15px;
+    position: absolute;
+    top: 80px;
+    left: 75px;
+  }
+
+  /* ncbtmb approved image */
+  .nbctmbcompnentImg {
+    width: 275px;
+    height: 275px
+  }
+
+  .checkIcon {
+    width: 20px;
+    height: 20px;
+
+  }
+
+
+}
+
+/* custom font size for small device */
+@media only screen and (max-width:425px) {
+  .extsmallf {
+    font-size: 11px !important;
+  }
+
+  .minismallf {
+    font-size: 14px !important;
+  }
+
+  .smallf {
+    font-size: 16px !important;
+  }
+
+  .mediumf {
+    font-size: 18px !important;
+  }
+
+  .largef {
+    font-size: 16px;
+  }
+
+  .extlargef {
+    font-size: 22px !important;
+  }
+
+  .dubblelargef {
+    font-size: 30px !important;
+  }
+
+  .triplelargef {
+    font-size: 40px !important;
+  }
+
+  .fourxllargef {
+    font-size: 36px !important;
+  }
+
+  .fivexllargef {
+    font-size: 40px;
+
+  }
+
+  .superlargef {
+    font-size: 46px !important;
+    /* letter-spacing: 0.025em; */
+  }
+}
+
+/* custom font size for small device */
+@media only screen and (max-width:640px) {
+  .extsmallf {
+    font-size: 11px !important;
+  }
+
+  .minismallf {
+    font-size: 14px !important;
+  }
+
+  .smallf {
+    font-size: 16px !important;
+  }
+
+  .mediumf {
+    font-size: 18px !important;
+  }
+
+  .largef {
+    font-size: 16px;
+  }
+
+  .extlargef {
+    font-size: 22px !important;
+  }
+
+  .dubblelargef {
+    font-size: 30px !important;
+  }
+
+  .triplelargef {
+    font-size: 40px !important;
+  }
+
+  .fourxllargef {
+    font-size: 36px !important;
+  }
+
+  .fivexllargef {
+    font-size: 40px;
+
+  }
+
+  .superlargef {
+    font-size: 46px !important;
+    /* letter-spacing: 0.025em; */
+  }
+}
+
+/* custom font size for small device */
+@media only screen and (max-width:991px) {
+  .extsmallf {
+    font-size: 11px !important;
+  }
+
+  .minismallf {
+    font-size: 14px !important;
+  }
+
+  .smallf {
+    font-size: 16px !important;
+  }
+
+  .mediumf {
+    font-size: 18px !important;
+  }
+
+  .largef {
+    font-size: 16px;
+  }
+
+  .extlargef {
+    font-size: 22px !important;
+  }
+
+  .dubblelargef {
+    font-size: 20px !important;
+  }
+
+  .triplelargef {
+    font-size: 20px !important;
+
+  }
+
+  .fourxllargef {
+    font-size: 20px !important;
+  }
+
+  .fivexllargef {
+    font-size: 30px;
+
+  }
+
+  .superlargef {
+    font-size: 46px !important;
+    /* letter-spacing: 0.025em; */
+  }
+}
+
+/* cutom font size for max screen size 1920 or default size of all types fonts */
+@media only screen and (min-width:426px) {
+
+  .extxlsmallf {
+    font-size: 12px;
+  }
+
+  .extsmallf {
+    font-size: 13px;
+  }
+
+  .minismallf {
+    font-size: 15px;
+  }
+
+  .smallf {
+    font-size: 11px;
+  }
+
+  .mediumf {
+    font-size: 20px;
+  }
+
+  .largef {
+    font-size: 15px;
+  }
+
+  .extlargef {
+    font-size: 25px;
+  }
+
+  .dubblelargef {
+    font-size: 16px;
+  }
+
+  .triplelargef {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+  }
+
+  .fourxllargef {
+    font-size: 40px;
+    line-height: 45px;
+  }
+
+  .fivexllargef {
+    font-size: 40px;
+
+  }
+
+  .superlargef {
+    font-size: 55px;
+    letter-spacing: 0.001em;
+    line-height: 65px;
+  }
+
+  .startFont {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 44px;
+
+  }
+
+  /* menu boxsize */
+  /* .menuBoxsizebigMenu {
+    min-height: 200px;
+  }
+
+  .menuBoxsizesmallMenu {
+    min-height: 180px;
+  } */
+
+
+}
+
+/* cutom font size for max screen size 1280 or default size of all types fonts */
+@media only screen and (min-width:992px) {
+  .extsmallf {
+    font-size: 13px;
+  }
+
+  .minismallf {
+    font-size: 15px;
+  }
+
+  .smallfXL {
+
+    font-size: 12.5px;
+  }
+
+  .smallf {
+    font-size: 10px;
+  }
+
+  .mediumf {
+    font-size: 11px;
+  }
+
+  .largef {
+    font-size: 14px;
+  }
+
+  .extlargef {
+    font-size: 16px;
+  }
+
+  .dubblelargefXXL {
+    font-size: 18px;
+  }
+
+  .dubblelargef {
+    font-size: 17px;
+    line-height: 21px;
+    letter-spacing: 1px;
+  }
+
+  .triplelargef {
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 20px;
+
+  }
+
+  .triplelargefXXXL {
+    font-size: 40px;
+    line-height: 57px;
+    font-weight: 400;
+
+  }
+
+  .fourxllargef {
+    font-size: 18px;
+    line-height: 22px;
+  }
+
+  .supermediumf {
+    font-size: 41px;
+    letter-spacing: -1.5px;
+    line-height: 45px;
+
+  }
+
+  .fivexllargef {
+    font-size: 38px;
+
+  }
+
+  .superlargef {
+    font-size: 50px;
+    letter-spacing: 0.001em;
+    line-height: 50px;
+  }
+
+  .startFont {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-top: 10px;
+
+  }
+
+  /* menu boxsize */
+  /* .menuBoxsizebigMenu {
+    min-height: 200px;
+  }
+
+  .menuBoxsizesmallMenu {
+    min-height: 180px;
+  } */
+
+
+}
+
+/* cutom font size for max screen size 1024 or default size of all types fonts */
+@media only screen and (min-width:1024px) {
+  .extxlsmallf {
+    font-size: 13px;
+  }
+
+  .extsmallf {
+    font-size: 13px;
+  }
+
+  .minismallf {
+    font-size: 15px;
+  }
+
+  .smallfXL {
+
+    font-size: 12.5px;
+  }
+
+  .smallf {
+    font-size: 12px;
+  }
+
+  .mediumf {
+    font-size: 20px;
+  }
+
+  .largef {
+    font-size: 18px;
+  }
+
+  .extlargef {
+    font-size: 25px;
+  }
+
+  .dubblelargef {
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+
+  .triplelargef {
+    font-size: 22px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+  .dubblelargefXXL {
+    font-size: 18px;
+  }
+
+  .fourxllargef {
+    font-size: 19px;
+    line-height: 25px;
+  }
+
+  .supermediumf {
+    font-size: 45px;
+    letter-spacing: -1.5px;
+    line-height: 50px;
+  }
+
+  .fivexllargef {
+    font-size: 42px;
+
+  }
+
+  .superlargef {
+    font-size: 60px;
+    letter-spacing: 0.001em;
+    line-height: 65px;
+  }
+
+  .startFont {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-top: -14px;
+
+  }
+
+  /* menu boxsize */
+  /* .menuBoxsizebigMenu {
+    min-height: 200px;
+  }
+
+  .menuBoxsizesmallMenu {
+    min-height: 180px;
+  } */
+
+
+}
+
+/* cutom font size for max screen size 1280 or default size of all types fonts */
+@media only screen and (min-width:1280px) {
+  .extsmallf {
+    font-size: 13px;
+  }
+
+  .minismallf {
+    font-size: 15px;
+  }
+
+  .smallfXL {
+
+    font-size: 12.5px;
+  }
+
+  .smallf {
+    font-size: 14px;
+  }
+
+  .mediumf {
+    font-size: 20px;
+  }
+
+  .largef {
+    font-size: 16px;
+  }
+
+  .extlargef {
+    font-size: 18px;
+  }
+
+  .dubblelargef {
+    font-size: 20px;
+  }
+
+  .triplelargef {
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 25px;
+
+  }
+
+
+  .triplelargefXXXL {
+    font-size: 48px;
+    line-height: 57px;
+    font-weight: 400;
+
+  }
+
+  .fourxllargef {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .fivexllargef {
+    font-size: 48px;
+
+  }
+
+  .dubblelargefXXL {
+    font-size: 20px;
+  }
+
+
+  .supermediumf {
+    font-size: 50px;
+    letter-spacing: -1.5px;
+    line-height: 55px;
+  }
+
+  .superlargef {
+    font-size: 57px;
+    letter-spacing: 0.001em;
+    line-height: 60px;
+  }
+
+  .startFont {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-top: -9px;
+
+  }
+
+  /* menu boxsize */
+  /* .menuBoxsizebigMenu {
+    min-height: 200px;
+  }
+
+  .menuBoxsizesmallMenu {
+    min-height: 180px;
+  } */
+
+
+}
+
+/* cutom font size for max screen size 1366 or default size of all types fonts */
+@media only screen and (min-width:1366px) {
+
+  .extxlsmallf {
+    font-size: 13px;
+  }
+
+  .extsmallf {
+    font-size: 13px;
+  }
+
+  .minismallf {
+    font-size: 15px;
+  }
+
+  .smallfXL {
+
+    font-size: 12.5px;
+  }
+
+  .smallf {
+    font-size: 14px;
+    line-height: 100%;
+  }
+
+  .mediumf {
+    font-size: 18px;
+  }
+
+  .largef {
+    font-size: 20px;
+  }
+
+  .extlargef {
+    font-size: 25px;
+  }
+
+  .dubblelargefXXL {
+    font-size: 22px;
+  }
+
+  .dubblelargef {
+    font-size: 19px;
+  }
+
+  .triplelargef {
+    font-size: 24px;
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+
+
+  .triplelargefXXXL {
+    font-size: 52px;
+    line-height: 63px;
+    font-weight: 400;
+
+  }
+
+  .fourxllargef {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .fivexllargef {
+    font-size: 52px;
+
+  }
+
+  .supermediumf {
+    font-size: 55px;
+    letter-spacing: -1.5px;
+    line-height: 60px;
+  }
+
+  .superlargef {
+    font-size: 60px;
+    letter-spacing: 0.001em;
+    line-height: 64px;
+  }
+
+  .startFont {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-top: -10px;
+
+  }
+
+  /* menu boxsize */
+  /* .menuBoxsizebigMenu {
+    min-height: 200px;
+  }
+
+  .menuBoxsizesmallMenu {
+    min-height: 180px;
+  } */
+}
+
+/* cutom font size for max screen size 1440 or default size of all types fonts */
+@media only screen and (min-width:1440px) {
+
+  .extxlsmallf {
+    font-size: 14px;
+  }
+
+  .extsmallf {
+    font-size: 13px;
+  }
+
+  .minismallf {
+    font-size: 15px;
+  }
+
+  .smallfXL {
+
+    font-size: 13px;
+  }
+
+  .smallf {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .mediumf {
+    font-size: 20px;
+  }
+
+  .largef {
+    font-size: 22px;
+  }
+
+  .extlargef {
+    font-size: 25px;
+  }
+
+  .dubblelargef {
+    font-size: 20px;
+  }
+
+  .triplelargef {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 30px !important;
+  }
+
+  .dubblelargefXXL {
+    font-size: 24px;
+  }
+
+
+  .fourxllargef {
+    font-size: 28px;
+    line-height: 35px;
+  }
+
+  .fivexllargef {
+    font-size: 56px;
+
+  }
+
+  .superlargef {
+    font-size: 65px;
+    letter-spacing: 0.001em;
+    line-height: 68px;
+  }
+
+  .triplelargefXXXL {
+    font-size: 55px;
+    letter-spacing: 1px;
+    font-weight: 400 !important;
+
+  }
+
+  .startFont {
+    font-size: 38px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-top: 20px;
+
+  }
+
+}
+
+/* cutom font size for max screen size 1600 or default size of all types fonts */
+@media only screen and (min-width:1600px) {
+
+  .extxlsmallf {
+    font-size: 16px;
+  }
+
+  .extsmallf {
+    font-size: 13px;
+  }
+
+  .minismallf {
+    font-size: 15px;
+  }
+
+  .smallf {
+    font-size: 14px;
+  }
+
+  .mediumf {
+    font-size: 20px;
+  }
+
+  .largef {
+    font-size: 22px;
+  }
+
+  .extlargef {
+    font-size: 25px;
+  }
+
+  .dubblelargef {
+    font-size: 30px;
+    line-height: 40px;
+  }
+
+  .triplelargef {
+    font-size: 25px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    line-height: 30px !important;
+  }
+
+  .fourxllargef {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .dubblelargefXXL {
+    font-size: 28px;
+  }
+
+  .supermediumf {
+    font-size: 61px;
+    letter-spacing: -1.5px;
+    line-height: 69px;
+  }
+
+  .fivexllargef {
+    font-size: 60px;
+
+  }
+
+
+  .superlargef {
+    font-size: 65px;
+    letter-spacing: -0.5px;
+    line-height: 70px;
+  }
+
+  .triplelargefXXXL {
+    font-size: 55px;
+    font-weight: 400 !important;
+
+
+  }
+
+  .startFont {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-top: 2px;
+
+  }
+
+}
+
+/* cutom font size for max screen size 1920 or default size of all types fonts */
+@media only screen and (min-width:1750px) {
+
+  .extsmallf {
+    font-size: 13px;
+  }
+
+  .minismallf {
+    font-size: 18px;
+  }
+
+  .extxlsmallf {
+    font-size: 16px;
+  }
+
+  .smallf {
+    line-height: 100%;
+    font-size: 17px;
+  }
+
+  .smallfXL {
+
+    font-size: 14px;
+  }
+
+  .mediumf {
+    font-size: 20px;
+  }
+
+  .mediumfXL {
+
+    font-size: 22px;
+  }
+
+  .largef {
+    font-size: 28px;
+  }
+
+  .extlargef {
+    font-size: 20px;
+  }
+
+  .dubblelargef {
+    font-size: 35px;
+    line-height: 45px;
+  }
+
+  .dubblelargefXL {
+    font-size: 28px;
+  }
+
+  .dubblelargefXXL {
+    font-size: 28px;
+  }
+
+  .dubblelargefXXXL {
+    font-size: 35px;
+  }
+
+  .triplelargef {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 500 !important;
+    line-height: 35px !important;
+
+  }
+
+
+  .triplelargefXL {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
+
+  }
+
+  .triplelargefXXL {
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
+
+  }
+
+  .triplelargefXXXL {
+    font-size: 55px;
+    letter-spacing: 1px;
+    font-weight: 400 !important;
+
+  }
+
+  .fourxllargef {
+    font-size: 37px;
+    line-height: 40px;
+  }
+
+  .fivexllargef {
+    font-size: 64px;
+
+  }
+
+  .supermediumf {
+    font-size: 61px;
+    letter-spacing: -1.5px;
+    line-height: 69px;
+  }
+
+  .superlargef {
+    font-size: 77px;
+    letter-spacing: -0.5px;
+    line-height: 80px;
+  }
+
+  /* custom font for start */
+
+  .startFont {
+    font-size: 45px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-top: 0px;
+
+
+  }
+
+
+
+}
+
+/* cutom font size for max screen size 1920 or default size of all types fonts */
+@media only screen and (min-width:1850px) {
+
+  .extsmallf {
+    font-size: 13px;
+  }
+
+  .minismallf {
+    font-size: 18px;
+  }
+
+  .extxlsmallf {
+    font-size: 16px;
+  }
+
+  .smallf {
+    line-height: 100%;
+    font-size: 16px;
+  }
+
+  .smallfXL {
+
+    font-size: 18px;
+  }
+
+  .mediumf {
+    font-size: 20px;
+  }
+
+  .mediumfXL {
+
+    font-size: 22px;
+  }
+
+  .largef {
+    font-size: 28px;
+  }
+
+  .extlargef {
+    font-size: 20px;
+  }
+
+  .dubblelargef {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .dubblelargefXL {
+    font-size: 28px;
+  }
+
+  .dubblelargefXXL {
+    font-size: 30px;
+  }
+
+  .dubblelargefXXXL {
+    font-size: 35px;
+  }
+
+
+
+  .triplelargef {
+    font-size: 30px;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
+    line-height: 35px !important;
+
+  }
+
+
+  .triplelargefXL {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
+
+  }
+
+  .triplelargefXXL {
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 600 !important;
+
+  }
+
+  .triplelargefXXXL {
+    font-size: 55px;
+    letter-spacing: 1px;
+    font-weight: 400 !important;
+
+  }
+
+  .fourxllargef {
+    font-size: 40px;
+    /* line-height: 60px; */
+    line-height: 100% !important;
+
+  }
+
+  .supermediumf {
+    font-size: 61px;
+    letter-spacing: -1.5px;
+    line-height: 69px;
+  }
+
+  .fivexllargef {
+    font-size: 66px;
+
+  }
+
+  .superlargef {
+    font-size: 87px;
+    letter-spacing: -0.5px;
+    line-height: 90px;
+  }
+
+  /* custom font for start */
+
+  .startFont {
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-top: 15px;
+
+  }
+
+
+
+}
+
+/* cutom font size for max screen size 1920 or default size of all types fonts */
+@media only screen and (min-width:1920px) {
+
+  .extsmallf {
+    font-size: 13px;
+  }
+
+  .minismallf {
+    font-size: 22px;
+  }
+
+  .extxlsmallf {
+    font-size: 20px;
+    letter-spacing: 0.5px;
+    /* line-height: 40px; */
+  }
+
+  .smallf {
+    font-size: 17px;
+    line-height: 100%;
+    letter-spacing: 0.5px;
+  }
+
+  .smallfXL {
+
+    font-size: 18px;
+  }
+
+  .mediumf {
+    font-size: 20px;
+  }
+
+  .mediumfXL {
+
+    font-size: 22px;
+  }
+
+  .largef {
+    font-size: 30px;
+  }
+
+  .extlargef {
+    font-size: 20px;
+  }
+
+  .dubblelargef {
+    font-size: 41px;
+    line-height: 45px;
+    letter-spacing: -0.5px;
+  }
+
+  .dubblelargefXL {
+    font-size: 28px;
+  }
+
+  .dubblelargefXXL {
+    font-size: 30px;
+  }
+
+  .dubblelargefXXXL {
+    font-size: 35px;
+  }
+
+  .triplelargef {
+    font-size: 40px;
+    letter-spacing: 0px;
+    font-weight: 500 !important;
+    line-height: 35px !important;
+
+  }
+
+
+  .triplelargefXL {
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-weight: 400 !important;
+
+  }
+
+  .triplelargefXXL {
+    font-size: 45px;
+    letter-spacing: 1px;
+    font-weight: 400 !important;
+
+  }
+
+  .triplelargefXXXL {
+    font-size: 55px;
+    line-height: 60px;
+    font-weight: 400 !important;
+
+  }
+
+  .fourxllargef {
+    font-size: 40px;
+    line-height: 50px;
+  }
+
+  .fivexllargef {
+    font-size: 70px;
+  }
+
+
+  .supermediumf {
+    font-size: 61px;
+    letter-spacing: -1.5px;
+    line-height: 69px;
+  }
+
+  .superlargef {
+    font-size: 110px;
+    letter-spacing: -1.5px;
+    line-height: 130px;
+  }
+
+  /* custom font for start */
+
+  .startFont {
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 44px;
+    margin-top: 41px;
+
+  }
+
+
+
+}
+
+/* @media only screen and(min ) */
+
+.firstPosition {
+  /* top: 0px !important; */
+  transform: translateY(0px);
+  transition: ease 500ms;
+}
+
+.secondPosition {
+  /* top: 36.2px !important; */
+  transform: translateY(36.2px);
+  transition: ease 500ms;
+}
+
+.thirddPosition {
+  /* top: 40px !important; */
+  transform: translateY(72.4px);
+  transition: ease 500ms;
+}
+
+.fourthPosition {
+  transform: translateY(108.6px);
+  transition: ease 500ms;
+}
+
+.fifthPosition {
+
+  transform: translateY(144.8px);
+  transition: ease 500ms;
+}
+
+.sixthPosition {
+  transform: translateY(180.0px);
+  transition: ease 500ms;
+}
+
+.seventhPosition {
+  transform: translateY(216.0px);
+  transition: ease 500ms;
+}
+
+.eighthPosition {
+  transform: translateY(252.0px);
+  transition: ease 500ms;
+}
+
+.ninthPosition {
+  transform: translateY(288.0px);
+  transition: ease 500ms;
+}
+
+.tenthPosition {
+  transform: translateY(324.0px);
+  transition: ease 500ms;
+}
+
+.eleventhPosition {
+  transform: translateY(360.0px);
+  transition: ease 500ms;
+}
+
+.lastPosition {
+  transform: translateY(396.0px);
+  transition: ease 500ms;
+}
+
+@media screen and (max-width:1300px) {
+  .ncbtmbtop {
+    margin-top: -10px;
+  }
+}
+
+
+
+/* loader animation css  */
+
+/* .loader-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+} */
+
+.loader {
+  margin: auto;
+  border: 3px dotted #dadada;
+  border-top: 3px solid #9747FF;
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+/* custom toast design  */
+
+.toast-message {
+  color: #9747FF;
+}

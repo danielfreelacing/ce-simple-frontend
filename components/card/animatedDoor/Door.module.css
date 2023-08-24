@@ -1,0 +1,206 @@
+.rotateChild:hover .child {
+
+
+
+    transform: rotateY(-45deg);
+    transform-origin: left;
+    transition: all 1s ease-in-out;
+}
+
+
+
+
+.rotateChild .child {
+    transform: rotateY(0deg);
+    transform-origin: left;
+    transition: all 1s ease-in-out;
+}
+
+
+.rotateChild:hover {
+    background: rgba(128, 128, 128, 0.164);
+    transition: background 500ms ease;
+}
+
+
+.rotateChild {
+
+
+    background: transparent;
+    transition: background 500ms ease;
+
+}
+
+
+.rotateChild:hover .imageDiv {
+
+    animation: scaleUpImage 500ms ease-out both;
+}
+
+@keyframes scaleUpImage {
+
+    from {
+        transform: scale(1.0);
+        transform: translateY(15px);
+
+    }
+
+    to {
+        transform: scale(1.2);
+
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+
+    .rotateChild:hover .imageDiv {
+
+        animation: scaleUpImage 500ms ease-out both;
+    }
+
+    @keyframes scaleUpImage {
+
+        from {
+            transform: scale(1.0);
+            transform: translateY(15px);
+
+        }
+
+        to {
+            transform: scale(1.1);
+        }
+    }
+
+}
+
+.rotateChild .imageDiv {
+
+    animation: scaleDownImage 500ms ease-in-out both;
+}
+
+@keyframes scaleDownImage {
+
+    from {
+        transform: scale(1.2);
+
+    }
+
+    to {
+        transform: scale(1.0);
+        transform: translateY(15px);
+
+    }
+
+
+}
+
+
+.rotateChild:hover h3 {
+
+
+    color: #9747FF;
+    transition: all 500ms ease-in-out;
+    animation: textanimateUp 500ms ease-in-out forwards;
+
+}
+
+
+@keyframes textanimateUp {
+    from {
+
+        transform: translateY(10px);
+        color: black;
+    }
+
+
+    to {
+
+
+        color: #9747FF;
+
+    }
+}
+
+
+.rotateChild h3 {
+
+
+    color: black;
+    transition: all 1s ease-in-out;
+    animation: textanimateDown 1s ease-in-out forwards;
+
+}
+
+
+@keyframes textanimateDown {
+    from {
+
+
+        color: #9747FF;
+    }
+
+
+    to {
+
+        transform: translateY(10px);
+        color: black;
+
+    }
+}
+
+
+.hide1 {
+
+    display: none;
+}
+
+
+.rotateChild:hover .hide1 {
+
+    color: black;
+    transition: color 5s ease-in;
+    animation: animateText 1s linear both;
+    display: block;
+}
+
+@keyframes animateText {
+
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+
+    to {
+        opacity: 1;
+        display: block;
+    }
+
+}
+
+
+
+.rotateChild .hide1 {
+
+    color: black;
+    transition: color 5s ease-in;
+    animation: animateTextHide 1s linear both;
+    display: block;
+}
+
+@keyframes animateTextHide {
+    from {
+        opacity: 1;
+        display: block;
+    }
+
+    to {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+
+
+
+}

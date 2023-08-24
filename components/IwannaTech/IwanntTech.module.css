@@ -1,0 +1,1013 @@
+.dotsBorder {
+
+    padding: 8px;
+    border-radius: 50% !important;
+    border-color: white;
+    border-width: 3px;
+
+
+}
+
+.shadow {
+
+    /* filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.3)); */
+    text-shadow: 0px 14px 16px rgba(0, 0, 0, 0.3);
+}
+
+.shadowHover:hover {
+
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.3));
+    transform: scale(1.5);
+    transition: all ease-in-out 500ms;
+}
+
+
+/* logout btn shadow  */
+.logoutBtnShadow:hover {
+
+    filter: drop-shadow(0px 5px 6px rgba(0, 0, 0, 0.3));
+    transform: scale(1.05);
+    transition: all ease-in-out 500ms;
+}
+
+.logoutBtnShadow {
+    transform: scale(1.0);
+    transition: all ease-in-out 500ms;
+}
+
+
+
+/* start */
+
+.vertmove {
+    /* -webkit-animation: mover 2s infinite alternate; */
+    animation: mover 2s infinite alternate;
+}
+
+
+@-webkit-keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+
+/* animation for mobile  */
+
+
+@media screen and (max-width:767px) {
+
+
+    .vertmove {
+        /* -webkit-animation: mover 2s infinite alternate; */
+        animation: mover 1s infinite alternate;
+    }
+
+
+    @-webkit-keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+
+    @keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-10px);
+        }
+    }
+}
+
+/* i whytechTech  */
+
+
+
+.imgRotate {
+    /* -webkit-animation: animateRotate 2s infinite alternate; */
+    animation: animateRotate 2s infinite alternate;
+    overflow: hidden;
+}
+
+/* @keyframes animateRotate {
+    0% {
+        transform: rotate(35deg);
+    }
+
+    100% {
+        transform: rotate(27deg);
+    }
+} */
+
+
+/* @-webkit-keyframes animateRotate {
+    0% {
+        transform: rotate(7.12deg);
+    }
+
+    100% {
+        transform: rotate(-4.28deg);
+    }
+} */
+
+@keyframes animateRotate {
+    0% {
+        transform: rotate(7.12deg);
+    }
+
+    100% {
+        transform: rotate(-4.28deg);
+    }
+}
+
+
+
+/* .imgRotateNowWhat {
+
+        animation: nowwhatMain alternate 2s ease-in-out infinite alternate;
+        transition: all ease-in-out 2s;
+    }
+
+
+    @keyframes nowwhatMain {
+        from {
+
+
+            transform: rotate(-6.28deg);
+        }
+
+        to {
+            transform: rotate(0deg);
+
+        }
+
+    } */
+
+
+.imgRotateNowWhat {
+    animation: nowwhat 2s infinite alternate;
+    overflow: hidden;
+}
+
+
+
+@keyframes nowwhat {
+    0% {
+        transform: rotate(5.12deg);
+    }
+
+    100% {
+        transform: rotate(-12.12deg);
+    }
+}
+
+
+/* getStarted man image animation */
+
+
+.animateGetStartedMan {
+
+    animation: ManAimate ease-in-out 1300ms infinite alternate;
+    transition: all ease-in-out 1300ms;
+
+}
+
+
+@keyframes ManAimate {
+
+    0% {
+
+        transform: rotate(-3.50deg);
+    }
+
+    100% {
+
+        transform: translateY(-5.5%);
+    }
+}
+
+
+
+/* scale animation */
+
+
+.scaleAnimation {
+
+
+    animation: scaleAnimate ease-in-out 2s infinite alternate;
+    transition: all ease-in-out 2s;
+}
+
+@keyframes scaleAnimate {
+
+    from {
+        /* -webkit-transform: scale(1.0); */
+        transform: scale(1.0, 1.0);
+        /* -ms-transform: scale(1.0, 1.0); */
+        /* IE 9 */
+        /* -webkit-transform: scale(1.0, 1.0); */
+        /* Safari and Chrome */
+    }
+
+    to {
+        /* -webkit-transform: scale(1.1); */
+        transform: scale(1.1, 1.1);
+        /* -ms-transform: scale(1.1, 1.1); */
+        /* IE 9 */
+        /* -webkit-transform: scale(1.1, 1.1); */
+        /* Safari and Chrome */
+
+    }
+}
+
+
+
+.arrowUpDown:nth-child(1) {
+
+    animation: fadeInOut ease-in-out infinite alternate 200ms;
+    transition: all ease-in-out 200ms;
+
+}
+
+@keyframes fadeInOut {
+
+    from {
+
+        opacity: 0.5;
+    }
+
+    to {
+
+        opacity: 1.0;
+    }
+}
+
+
+.fadeAnimation {
+    animation: fadeAnimateup 1s;
+    margin-top: 50px;
+    /* animation: animatio 1000ms; */
+    transition: 1s;
+    animation-duration: 1s;
+    animation-delay: .1s;
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes fadeAnimateup {
+
+    0%,
+
+    0% {
+        transform: translateY(2px);
+    }
+
+    2% {
+        transform: translateY(2px);
+    }
+
+    70%,
+    100% {
+
+        transform: translateY(-50px);
+
+    }
+
+}
+
+/* @keyframes fadeAnimate {
+
+
+    from {
+        opacity: 0;
+        transform: translateY(250px);
+    }
+
+    to {
+        opacity: 1;
+
+
+    }
+
+
+} */
+
+/* .fadeAnimationDown {
+    transform: translateY(-50px);
+} */
+.fadeAnimationDown {
+    /* transform: translateY(50px); */
+    /* transition-timing-function: cubic-bezier(0.7, -0.4, 0.4, 1.4); */
+    /* transition-duration: 1000ms; */
+    /* transition-property: transform; */
+    margin-top: -50px;
+    animation: animatio 1000ms;
+    transition: 1s;
+    animation-duration: 1s;
+    animation-delay: .1s;
+    /* animation-direction: alternate; */
+    animation-fill-mode: forwards;
+}
+
+
+/* .fadeAnimationDown {
+    transition-duration: 1000ms;
+    transition-property: transform;
+    animation-name: fadeAnimationDown;
+} */
+
+
+
+/* .fadeAnimationDown {
+    animation: fadeAnimationDown 1s ease;
+    transition-duration: 1000ms;
+
+} */
+
+@keyframes animatio {
+
+    0%,
+
+    0% {
+        transform: translateY(-2px);
+    }
+
+    2% {
+        transform: translateY(-2px);
+    }
+
+    70%,
+    100% {
+
+        transform: translateY(50px);
+
+    }
+
+}
+
+
+
+/* @keyframes fadeAnimateDown {
+
+
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+    }
+} */
+
+
+.fadeAnimationInfinite {
+    animation: fadeAnimate 2s ease infinite alternate;
+    overflow: hidden;
+}
+
+@keyframes fadeAnimate {
+
+
+    from {
+        opacity: 1;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        overflow: hidden;
+    }
+}
+
+/* rottate animation overflow */
+
+.rotatebgImg {
+
+    transform: rotate(-30.28deg);
+}
+
+
+
+.aboutMain {
+
+    animation-name: aboutShow;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    transition: all ease-in-out 3s;
+}
+
+
+@keyframes aboutShow {
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+        opacity: 1;
+    }
+}
+
+.tranatationNone {
+
+    transition: all ease 1s;
+    animation: displaynoneImg 1s ease forwards;
+}
+
+@keyframes displaynoneImg {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* margin for animate image */
+
+@media screen and (min-width:375px) {
+
+    .imgcenter {
+
+        margin-right: 40px;
+    }
+
+
+}
+
+
+/* why us image animated image components */
+
+.imageCompMain {
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 450px;
+
+}
+
+
+.whyUsRactComp {
+    position: absolute;
+    width: 400px;
+    bottom: 46px;
+    right: 50.5px;
+}
+
+.whyUsRactImage {
+    width: 500px;
+}
+
+
+.whyUsYellowBgComp {
+    position: absolute;
+    bottom: -130px;
+    right: -86px;
+    z-index: 10;
+    transform: rotate(-32deg);
+}
+
+.whyUsYellowBgImage {
+    width: 450px;
+}
+
+.whyUsMainObjImageComp {
+    position: absolute;
+    bottom: 36px;
+    right: 44px;
+    width: 453px;
+}
+
+
+
+/* get started componet */
+
+
+.getstartedCompMain {
+
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 416px;
+}
+
+
+.getStartedRactComp {
+    position: absolute;
+    width: 345px;
+    bottom: 46px;
+    right: 50.5px;
+}
+
+.getStartedRactImage {
+    width: 390px;
+}
+
+.getStartedYellowBgComp {
+    position: absolute;
+    bottom: -105px;
+    right: -55px;
+    z-index: 10;
+    transform: rotate(-32deg);
+}
+
+.getStartedYellowBgImage {
+    width: 376px;
+}
+
+
+.getStartedMainObjImageComp {
+
+    position: absolute;
+    bottom: 10px;
+    right: 7px;
+    width: 450px;
+}
+
+.getStartedManImage {
+
+    width: 400px;
+}
+
+.startCompMt {
+    margin-top: 393px;
+}
+
+
+/* responsive for destop */
+
+@media (max-height:750px) {
+
+    /* why us image animated image components */
+
+    .imgbox img {
+        width: 84%;
+    }
+
+    .imgboxcommi img {
+        width: 60%;
+    }
+
+    .bottomContent {
+        bottom: 0%;
+    }
+
+    .imageCompMain {
+
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 416px;
+
+    }
+
+
+    .whyUsRactComp {
+        position: absolute;
+        width: 400px;
+        bottom: 46px;
+        right: 50.5px;
+    }
+
+    .whyUsRactImage {
+        width: 500px;
+    }
+
+    .whyUsYellowBgComp {
+        position: absolute;
+        bottom: -130px;
+        right: -86px;
+        z-index: 10;
+        transform: rotate(-32deg)
+    }
+
+    .whyUsYellowBgImage {
+        width: 450px;
+    }
+
+    .whyUsMainObjImageComp {
+        position: absolute;
+        bottom: 42px;
+        right: 23px;
+        width: 460px;
+    }
+
+    /* get started componet */
+
+
+    .getstartedCompMain {
+
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 328px;
+    }
+
+
+    .getStartedRactComp {
+        /* position: absolute;
+        width: 282px;
+        bottom: 59px;
+        right: 54.5px; */
+        position: absolute;
+        width: 328px;
+        bottom: 25px;
+        right: 54.5px;
+    }
+
+    .getStartedRactImage {
+        width: 390px;
+    }
+
+    .getStartedYellowBgComp {
+        /* position: absolute;
+        bottom: -64px;
+        right: -30px;
+        z-index: 10;
+        transform: rotate(-32deg); */
+        position: absolute;
+        bottom: -116px;
+        right: -38px;
+        z-index: 10;
+        transform: rotate(-32deg);
+    }
+
+    .getStartedYellowBgImage {
+        /* width: 305px; */
+        width: 350px;
+
+    }
+
+
+    .getStartedMainObjImageComp {
+
+        /* position: absolute;
+        bottom: 30px;
+        right: 56px;
+        width: 324px; */
+        position: absolute;
+        bottom: -8px;
+        right: 13px;
+        width: 424px;
+    }
+
+    .getStartedManImage {
+
+        /* width: 325px; */
+        width: 379px;
+    }
+
+    .startCompMt {
+        margin-top: 280px;
+    }
+
+
+
+}
+
+@media (max-height:700px) {
+    /* why us image animated image components */
+
+    .imgbox img {
+        /* width: 64%; */
+        width: 80%;
+    }
+
+    .imgboxcommi img {
+        width: 50%;
+    }
+
+
+    .bottomContent {
+        bottom: 18%;
+    }
+
+    .imageCompMain {
+
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        /* height: 416px; */
+        height: 468px;
+
+    }
+
+
+    .whyUsRactComp {
+        position: absolute;
+        width: 338px;
+        bottom: 116px;
+        right: 50.5px;
+    }
+
+    .whyUsRactImage {
+        width: 500px;
+    }
+
+    .whyUsYellowBgComp {
+        /* position: absolute;
+        bottom: -76px;
+        right: -95px;
+        z-index: 10;
+        transform: rotate(-27deg); */
+        position: absolute;
+        bottom: -56px;
+        right: -106px;
+        z-index: 10;
+        transform: rotate(-31deg);
+    }
+
+    .whyUsYellowBgImage {
+        /* width: 450px; */
+        width: 426px;
+
+    }
+
+    .whyUsMainObjImageComp {
+        /* position: absolute;
+        bottom: 105px;
+        right: 37px;
+        width: 390px; */
+        position: absolute;
+        bottom: 98px;
+        right: 37px;
+        width: 399px;
+    }
+
+    .startCompMt {
+        margin-top: 240px;
+    }
+}
+
+@media (max-height:500px) {
+
+    /* why us image animated image components */
+
+    .imgbox img {
+        /* width: 48%; */
+        width: 65%;
+    }
+
+    .imgboxcommi img {
+        width: 40%;
+    }
+
+    .bottomContent {
+        bottom: 14%;
+    }
+
+
+    .imageCompMain {
+
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        /* height: 380px; */
+        height: 438px;
+
+    }
+
+
+    .whyUsRactComp {
+        position: absolute;
+        width: 307px;
+        bottom: 158px;
+        right: -22.5px;
+    }
+
+    .whyUsRactImage {
+        width: 263px;
+    }
+
+    .whyUsYellowBgComp {
+        position: absolute;
+        bottom: -36px;
+        right: -95px;
+        z-index: 10;
+        transform: rotate(-31deg);
+        /* position: absolute;
+        bottom: -21px;
+        right: -36px;
+        z-index: 10;
+        transform: rotate(-31deg); */
+    }
+
+    .whyUsYellowBgImage {
+        width: 400px;
+    }
+
+    .whyUsMainObjImageComp {
+        position: absolute;
+        bottom: 152px;
+        right: -8px;
+        width: 315px;
+    }
+
+
+    /* get started componet */
+
+
+    .getstartedCompMain {
+
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 340px;
+    }
+
+
+    .getStartedRactComp {
+        position: absolute;
+        width: 345px;
+        bottom: 108px;
+        right: 24.5px;
+    }
+
+    .getStartedRactImage {
+        width: 243px;
+    }
+
+    .getStartedYellowBgComp {
+        position: absolute;
+        bottom: 3px;
+        right: 54px;
+        z-index: 10;
+        transform: rotate(-32deg);
+    }
+
+    .getStartedYellowBgImage {
+        width: 261px;
+    }
+
+
+    .getStartedMainObjImageComp {
+
+        position: absolute;
+        bottom: 86px;
+        right: -4px;
+        width: 404px
+    }
+
+    .getStartedManImage {
+
+        width: 276px;
+    }
+
+    .startCompMt {
+        margin-top: 190px;
+    }
+
+
+    /* .getStarted {
+
+        margin-right: -7rem;
+    } */
+}
+
+@media (max-height:450px) {
+
+    /* why us image animated image components */
+
+    .imgbox img {
+        /* width: 48%; */
+        width: 65%;
+    }
+
+    .imgboxcommi img {
+        width: 40%;
+    }
+
+    .bottomContent {
+        bottom: 14%;
+    }
+
+
+    .imageCompMain {
+
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        /* height: 380px; */
+        height: 448px;
+
+    }
+
+
+    .whyUsRactComp {
+        position: absolute;
+        width: 307px;
+        bottom: 220px;
+        right: -35.5px;
+    }
+
+    .whyUsRactImage {
+        width: 226px;
+    }
+
+    .whyUsYellowBgComp {
+        position: absolute;
+        bottom: 90px;
+        right: -95px;
+        z-index: 10;
+        transform: rotate(-31deg);
+    }
+
+    .whyUsYellowBgImage {
+        width: 324px;
+    }
+
+    .whyUsMainObjImageComp {
+        position: absolute;
+        bottom: 218px;
+        right: 37px;
+        width: 240px;
+    }
+
+
+    /* get started componet */
+
+
+    .getstartedCompMain {
+
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 340px;
+    }
+
+
+    .getStartedRactComp {
+        position: absolute;
+        width: 345px;
+        bottom: 108px;
+        right: 24.5px;
+    }
+
+    .getStartedRactImage {
+        width: 243px;
+    }
+
+    .getStartedYellowBgComp {
+        position: absolute;
+        bottom: 3px;
+        right: 54px;
+        z-index: 10;
+        transform: rotate(-32deg);
+    }
+
+    .getStartedYellowBgImage {
+        width: 261px;
+    }
+
+
+    .getStartedMainObjImageComp {
+
+        position: absolute;
+        bottom: 86px;
+        right: -4px;
+        width: 404px
+    }
+
+    .getStartedManImage {
+
+        width: 276px;
+    }
+
+    .startCompMt {
+        margin-top: 160px;
+    }
+
+
+    /* .getStarted {
+
+        margin-right: -7rem;
+    } */
+}

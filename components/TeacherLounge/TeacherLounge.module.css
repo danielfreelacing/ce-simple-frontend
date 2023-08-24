@@ -1,0 +1,424 @@
+.openModel {
+
+    animation: ModelOpen 1s ease forwards;
+    transition: all ease-in-out 1s;
+    display: block;
+    position: absolute;
+
+
+}
+
+
+
+@keyframes ModelOpen {
+
+
+    0% {
+
+        bottom: 0;
+        right: 0;
+        opacity: 0;
+        width: 350px;
+    }
+
+
+    100% {
+
+        bottom: 30%;
+        right: 50%;
+
+        opacity: 1;
+        width: 400px;
+    }
+}
+
+
+/* media query */
+
+
+@media (max-height: 700px) {
+
+
+    .openModel {
+
+        animation: ModelOpen 500ms ease forwards;
+        transition: all ease-in-out 1s;
+        display: block;
+        position: absolute;
+
+
+    }
+
+    @keyframes ModelOpen {
+
+
+        0% {
+
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            width: 350px;
+        }
+
+
+        100% {
+
+            bottom: 15%;
+            right: 40%;
+
+            opacity: 1;
+            width: 350px;
+        }
+    }
+
+
+}
+
+
+@media screen and (max-width: 1024px) {
+
+
+    .openModel {
+
+        animation: ModelOpen 500ms ease forwards;
+        transition: all ease-in-out 1s;
+        display: block;
+        position: absolute;
+
+
+    }
+
+
+
+    @keyframes ModelOpen {
+
+
+        0% {
+
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            width: 350px;
+        }
+
+
+        100% {
+
+            bottom: 15%;
+            right: 38%;
+
+            opacity: 1;
+            width: 320px;
+        }
+    }
+
+
+}
+
+@media screen and (max-width: 1280px) {
+
+
+    .openModel {
+
+        animation: ModelOpen 500ms ease forwards;
+        transition: all ease-in-out 1s;
+        display: block;
+        position: absolute;
+
+
+    }
+
+
+
+    @keyframes ModelOpen {
+
+
+        0% {
+
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            width: 350px;
+        }
+
+
+        100% {
+
+            bottom: 18%;
+            right: 38%;
+
+            opacity: 1;
+            width: 370px;
+        }
+    }
+
+
+}
+
+.closeModel {
+
+    animation: ModelClose .8s linear forwards;
+    transition: all ease-in-out .8s;
+    position: absolute;
+    z-index: 0;
+
+
+
+}
+
+@keyframes ModelClose {
+
+    0% {
+
+        bottom: 30%;
+        right: 50%;
+        visibility: visible;
+        opacity: 1;
+        height: 35%;
+        width: 50%;
+    }
+
+
+    100% {
+        bottom: 0;
+        right: 0;
+        visibility: hidden;
+        transform: none;
+        opacity: 0;
+        height: 25%;
+        width: 50%;
+        z-index: -10;
+    }
+
+
+
+
+    /* 0% {
+
+        bottom: 30%;
+        right: 50%;
+        visibility: visible;
+        opacity: 1;
+        height: 35%;
+        width: 400px;
+
+
+
+    }
+
+
+
+    99% {
+        bottom: 0px;
+        right: 0px;
+        opacity: 0;
+        visibility: hidden;
+        transform: none;
+        width: 350px;
+
+    }
+
+    100% {
+        bottom: 0px;
+        right: 0px;
+        opacity: 0;
+        visibility: hidden;
+        transform: none;
+        width: 0px;
+        height: 0;
+
+    } */
+
+
+
+
+}
+
+/* media query for extra large device */
+
+
+@media only screen and (min-width:1921px) {
+
+
+    .openModel {
+
+        animation: ModelOpen 500ms ease forwards;
+        transition: all ease-in-out 1s;
+        display: block;
+        position: absolute;
+    }
+
+    @keyframes ModelOpen {
+
+
+        0% {
+
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            width: 350px;
+        }
+
+
+        100% {
+
+            bottom: 30%;
+            right: 50%;
+            opacity: 1;
+            width: 50%;
+        }
+    }
+
+    .closeModel {
+
+        animation: ModelClose 1s linear forwards;
+        transition: all ease-in-out 1s;
+        position: absolute;
+        z-index: 0;
+    }
+
+    @keyframes ModelClose {
+
+
+        0% {
+
+            bottom: 30%;
+            right: 50%;
+            opacity: 1;
+            height: 35%;
+            width: 50%;
+        }
+
+
+        100% {
+            bottom: 0;
+            right: 0;
+            opacity: 0;
+            height: 25%;
+            width: 50%;
+            z-index: -10;
+        }
+
+        /* 0% {
+
+            bottom: 30%;
+            right: 50%;
+            visibility: visible;
+            opacity: 1;
+            width: 600px;
+        }
+
+
+
+        99% {
+            bottom: 0px;
+            right: 0px;
+            opacity: 0;
+            visibility: hidden;
+            transform: none;
+            width: 450px;
+
+        }
+
+        100% {
+            bottom: 0px;
+            right: 0px;
+            opacity: 0;
+            visibility: hidden;
+            transform: none;
+            width: 0px;
+            height: 0;
+
+        } */
+
+
+
+
+    }
+
+}
+
+.mainDivHide {
+
+    opacity: 0;
+    transition: 1s ease-in-out;
+}
+
+.mainDivShow {
+
+    opacity: 1;
+    transition: 1s ease-in-out;
+}
+
+/* i wanna tech css  */
+
+.iwannatech {
+    background-image: url(/images/iwanna1.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+}
+
+.iwannatech:hover {
+    background-image: url(/images/iwanna2.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: all ease-in-out 500ms;
+    -webkit-transition: all ease-in-out 500ms;
+}
+
+
+
+
+/* animation for element hide after transformation */
+
+
+
+.hidediveAfterTransform {
+
+    animation: elementTransform ease-in-out 500ms forwards;
+    -webkit-animation: elementTransform ease-in-out 500ms forwards;
+}
+
+
+
+@keyframes elementTransform {
+
+    from {
+        transform: none;
+        opacity: 1;
+
+    }
+
+    to {
+
+        transform: translateY(500px);
+        transform: translateX(-0px);
+        opacity: 0;
+    }
+}
+
+
+.imgTech {
+
+    position: fixed !important;
+
+    top: 45% !important;
+    right: 12.5% !important;
+
+}
+
+
+@media (max-width:1024px) {
+
+    .imgTech {
+
+        position: fixed !important;
+
+        top: 50% !important;
+        right: 10% !important;
+
+    }
+
+}

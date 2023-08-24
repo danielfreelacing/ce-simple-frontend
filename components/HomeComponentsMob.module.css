@@ -1,0 +1,190 @@
+/* left right animation for mobile  */
+
+
+
+.toggleOn {
+    animation-name: MenuToggleOn;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    animation-duration: 1500ms;
+    position: absolute;
+    width: 0vw;
+    transition: all ease 1500ms;
+    /* -webkit-animation-name: MenuToggleOn 1000ms forwards linear; */
+}
+
+@keyframes MenuToggleOn {
+
+
+    0% {
+
+
+        top: 0;
+        left: 0px;
+        opacity: 0;
+        z-index: 0;
+        transform: translateX(500px);
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    1% {
+
+        top: 0;
+        left: 0px;
+        opacity: 1;
+        display: block;
+    }
+
+    100% {
+
+        top: 0;
+        left: 0px;
+        opacity: 1;
+        display: block;
+        width: 100vw;
+        visibility: visible;
+    }
+}
+
+
+.toggleOff {
+
+    animation-name: MenuToggleOff;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    animation-duration: 1000ms;
+    position: absolute;
+    width: 0vw;
+    opacity: 0;
+    /* -webkit-animation-name: MenuToggleOff 1000ms forwards linear; */
+    transition: all linear 1000ms;
+
+}
+
+@keyframes MenuToggleOff {
+
+
+    0% {
+
+
+        top: 0;
+        left: 0px;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        width: 100vw;
+    }
+
+    99% {
+
+        top: 0;
+        left: 0px;
+        opacity: 0;
+        z-index: 0;
+        transform: translateX(500px);
+        visibility: hidden;
+
+    }
+
+
+    100% {
+
+        top: 0;
+        left: 0px;
+        opacity: 0;
+        z-index: 0;
+        transform: translateX(500px);
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}
+
+
+
+
+.righttoleftAnimation {
+    animation: righttoleftMobile linear 1s forwards;
+    transition: animation linear 1s;
+
+}
+
+@keyframes righttoleftMobile {
+
+    from {
+        margin-left: 110%;
+        margin-top: 100% !important;
+
+    }
+
+    to {
+
+        margin-top: 100% !important;
+        margin-left: 0%;
+    }
+
+}
+
+
+
+
+.lefttorightAnimation {
+    animation: lefttorightMobile ease-in-out 2s forwards;
+    transition: animation ease-in-out 2s;
+    display: none;
+}
+
+@keyframes lefttorightMobile {
+
+    from {
+
+        margin-left: 0%;
+        display: block;
+        width: 100%;
+    }
+
+    to {
+
+        left: 150%;
+        display: none;
+        width: 0%;
+    }
+}
+
+.MenuShowAnimation {
+    animation: menuShow ease-in-out 1000ms forwards;
+    transition: animation ease-in-out 1000ms;
+}
+
+@keyframes menuShow {
+
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0%;
+    }
+}
+
+
+.MenuHideAnimation {
+    animation: menuHide ease-in-out 1000ms forwards;
+    transition: animation ease-in-out 1000ms;
+    position: absolute;
+}
+
+@keyframes menuHide {
+
+    from {
+        left: 0%;
+    }
+
+    to {
+        left: -100%;
+    }
+}

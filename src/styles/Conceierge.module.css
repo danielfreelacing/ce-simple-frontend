@@ -1,0 +1,326 @@
+.opacityAnimation {
+
+    animation-name: showdiv;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes showdiv {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        z-index: 100;
+    }
+}
+
+.opacityAnimation1 {
+
+    animation-name: hideDiv;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+
+}
+
+@keyframes hideDiv {
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        z-index: 0;
+    }
+}
+
+
+
+/* menu toggele css */
+
+.toggleOn {
+    animation-name: MenuToggleOn;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    animation-duration: 1200ms;
+    position: absolute;
+    width: 0vw;
+    /* -webkit-animation-name: MenuToggleOn 1000ms forwards linear; */
+}
+
+@keyframes MenuToggleOn {
+
+
+    0% {
+
+
+        top: 0;
+        left: 0px;
+        opacity: 0;
+        z-index: 0;
+        transform: translateX(2000px);
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+
+    1% {
+
+        top: 0;
+        left: 0px;
+        opacity: 1;
+        display: block;
+    }
+
+    100% {
+
+        top: 0;
+        left: 0px;
+        opacity: 1;
+        display: block;
+        width: 100vw;
+        visibility: visible;
+    }
+}
+
+
+.toggleOff {
+
+    animation-name: MenuToggleOff;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    overflow: hidden;
+    animation-duration: 1000ms;
+    position: absolute;
+    width: 0vw;
+    opacity: 0;
+    /* -webkit-animation-name: MenuToggleOff 1000ms forwards linear; */
+    transition: all linear 1000ms;
+
+}
+
+@keyframes MenuToggleOff {
+
+
+    0% {
+
+
+        top: 0;
+        left: 0px;
+        opacity: 1;
+        visibility: visible;
+        transform: none;
+        width: 100vw;
+    }
+
+    99% {
+
+        top: 0;
+        left: 0px;
+        opacity: 0;
+        z-index: 0;
+        transform: translateX(2000px);
+        visibility: hidden;
+
+    }
+
+
+    100% {
+
+        top: 0;
+        left: 0px;
+        opacity: 0;
+        z-index: 0;
+        transform: translateX(2000px);
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+}
+
+.scrollHidden {
+    overflow-x: hidden;
+}
+
+/* doorAnimation */
+
+.mainAnimation .startDoorAnimateOpen {
+
+    opacity: 0;
+
+    transition: opacity 100ms ease-in-out;
+}
+
+.mainAnimation:hover.startDoorAnimateOpen {
+    opacity: 1;
+
+    transition: opacity 100ms ease-in-out;
+}
+
+.mainAnimation .startDoorAnimateClose {
+
+    opacity: 1;
+
+    transition: opacity 100ms ease-in-out;
+
+    animation: showDoor 2s ease-in-out;
+}
+
+@keyframes showDoor {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.mainAnimation:hover.startDoorAnimateClose {
+
+    animation: hideDoor 2s ease-in-out forwards;
+
+    opacity: 0;
+
+    transition: opacity 100ms ease-in-out;
+}
+
+
+@keyframes hideDoor {
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+.hideNcbtmbdiv {
+
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    display: none;
+}
+
+.paddingLogo {
+
+    padding: 40px;
+    transition: 1s ease-in-out;
+}
+
+.lobby:hover {
+
+    background-color: #9747FF;
+    transition: all ease-in-out 500ms;
+}
+
+
+.concorgemtTop {
+
+    margin-top: 50px !important;
+}
+
+@media (max-height:840px) {
+
+    .concorgemtTop {
+
+        margin-top: 30px !important;
+    }
+}
+
+@media (max-height:750px) {
+
+    .textAreaHeight {
+
+        max-height: 100px !important;
+    }
+
+    .inputHeight {
+
+        max-height: 40px !important;
+    }
+
+    .concorgemtTop {
+
+        margin-top: 30px !important;
+    }
+
+
+}
+
+@media (max-height:650px) {
+
+    .textAreaHeight {
+
+        max-height: 75px !important;
+    }
+
+    .inputHeight {
+
+        max-height: 40px !important;
+    }
+
+    .concorgemtTop {
+
+        margin-top: 10px !important;
+    }
+
+
+}
+
+@media (max-height:500px) {
+
+    .textAreaHeight {
+
+        max-height: 40px !important;
+    }
+
+    .inputHeight {
+
+        max-height: 20px !important;
+    }
+
+    .concorgemtTop {
+
+        margin-top: 10px !important;
+    }
+
+
+}
+
+@media (max-height:400px) {
+
+    .textAreaHeight {
+
+        max-height: 40px !important;
+    }
+
+    .inputHeight {
+
+        max-height: 20px !important;
+    }
+
+    .concorgemtTop {
+
+        margin-top: 0px !important;
+    }
+
+    .marginTopsendBtn {
+
+        margin-top: 0px !important;
+    }
+
+    .paddingTopsendBtn {
+
+        padding-top: 0px !important;
+    }
+}

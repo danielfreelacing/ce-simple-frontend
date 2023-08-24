@@ -1,0 +1,792 @@
+.element {
+
+    color: black;
+    font-weight: 600;
+    transition: all 500ms ease-in-out;
+}
+
+
+.element:hover {
+    color: #9747FF;
+    font-weight: bold;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+
+.submitbtnbg {
+
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.submitbtnbg:hover {
+
+    color: white;
+    background-color: #9747FF;
+    font-weight: bold;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+
+
+.lineClampContent {
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 150px;
+    overflow: hidden;
+    padding-right: 2px;
+
+}
+
+
+/* dropshadow add button  */
+
+.shadowAddBtn{
+    filter: drop-shadow(0px 9px 18px rgba(48, 0, 0, 0.82));
+}
+
+/* updown animation for scroll btn */
+.UpDownAnimation {
+    animation: upDownAnimate linear 500ms infinite alternate;
+}
+
+@keyframes upDownAnimate {
+
+    0% {
+        transform: translateY(0);
+        font-weight: 600;
+    }
+
+    100% {
+        transform: translateY(-10px);
+        font-weight: 800;
+    }
+}
+
+
+.formbg {
+
+    background: rgba(151, 71, 255, 0.2);
+}
+
+.paymentbyGiftCardBtn {
+
+    background: linear-gradient(180deg, #AC6CFF 0%, #6400E6 100%);
+    border-radius: 104px;
+}
+
+.shadowForPaymentOption {
+
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.45);
+}
+
+.btnDesabledBg {
+
+    background: linear-gradient(180deg, #AC6CFF 0%, #6400E6 100%);
+
+    opacity: 0.2;
+}
+
+.readyToCheckoutBg {
+
+    background: linear-gradient(180deg, #AC6BFF 0%, #7721E8 100%);
+}
+
+.modelzindex {
+    z-index: 100;
+}
+
+/* image hover shine */
+
+.image_wrapper {
+    height: auto;
+    width: auto;
+    border-radius: 6px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine::before {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: -75%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+}
+
+.shine:hover::before,
+.shine:focus::before {
+    animation: shine 0.85s;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}
+
+/* payBy gift card */
+
+.payByGiftCard {
+
+    width: 180px;
+    height: 130px
+}
+
+/* redeem gift card iamge */
+
+.redeemCardImage {
+    width: 140px;
+    height: 110px;
+}
+
+/* redeem gift card responsive css */
+
+
+/* payment by credit card image */
+
+.creditCardImage {
+    width: 169px !important;
+    height: 140px !important;
+}
+
+.selectedCoursepriceBg {
+
+    width: 120px !important;
+    height: 80px !important;
+}
+
+@media (max-width:1024px) {
+
+    .selectedCoursepriceBg {
+
+        width: 216px !important;
+        height: 78px !important;
+    }
+}
+
+@media (max-height:812px) and (min-width:992px) {
+    .creditCardImage {
+        width: 260px !important;
+        height: 140px !important;
+    }
+
+    .creditCardbtn {
+        margin-top: 0px !important;
+    }
+
+    .paypalImage {
+        width: 100px !important;
+        height: 120px !important;
+    }
+
+    .splitPaymentMethod {
+        width: 150px !important;
+        height: 120px !important;
+    }
+
+    .paypalPaymentsuccess {
+
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .selectedCoursepriceBg {
+        width: 120px !important;
+        height: 46px !important;
+    }
+
+    .submitbtnbg {
+
+        margin-top: 6px !important;
+        margin-bottom: 12px !important;
+        padding-bottom: 10px !important;
+        padding-top: 10px !important;
+    }
+
+}
+
+@media (max-height:992px) and (min-width:992px) {
+    .creditCardImage {
+        width: 169px !important;
+        height: 100px !important;
+    }
+
+    .creditCardbtn {
+        margin-top: 0px !important;
+    }
+
+    .paypalImage {
+        width: 100px !important;
+        height: 90px !important;
+    }
+
+    .splitPaymentMethod {
+        width: 150px !important;
+        height: 120px !important;
+    }
+
+    /* form input field padding */
+
+    /* .formbg input {
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+    } */
+
+
+    .selectedCoursepriceBg {
+        width: 216px !important;
+        height: 63px !important;
+    }
+
+
+}
+
+@media (max-height:750px) and (min-width:992px) {
+
+    .redeemCardImage {
+        width: 120px !important;
+        height: 100px !important;
+    }
+
+    .splitPaymentMethod {
+        width: 190px !important;
+        height: 130px !important;
+    }
+
+    /* .splitPaymentCardMain {
+
+        margin-top: 10px 0px 0px 0px !important;
+    } */
+
+    .splitPaymentCardMain {
+
+        margin-top: 10px !important;
+    }
+
+
+    .creditCardImage {
+        width: 108px !important;
+        height: 120px !important;
+    }
+
+    .payByGiftCard {
+
+        width: 140px !important;
+        height: 120px !important;
+    }
+
+    .creditCardbtn {
+        margin-top: 0px !important;
+    }
+
+    .paymentDialog {
+
+        max-width: 750px !important;
+
+    }
+
+
+    .splitPaymentForm {
+
+        padding: 0px 130px 0px 130px !important;
+
+        margin-top: 0px !important;
+    }
+
+    .selectedCoursepriceBg {
+
+        width: 200px !important;
+        height: 53px !important;
+    }
+
+
+    .paypalLogo {
+
+        width: 60px !important;
+        height: 30px !important;
+    }
+
+
+    .giftCardLogo {
+
+        width: 80px !important;
+        height: 60px !important;
+    }
+
+    .splitPaymentLogo {
+
+        width: 80px !important;
+        height: 60px !important;
+    }
+
+    /* checkoutform padding */
+
+    .formbg {
+
+        padding: 6px !important;
+    }
+
+    .passwordInput input {
+
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    .formbg input {
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    /* submitbtn */
+
+    .submitbtnbg {
+
+        margin-top: 6px !important;
+        margin-bottom: 12px !important;
+        padding-bottom: 10px !important;
+        padding-top: 10px !important;
+    }
+
+    .paypalPaymentsuccess {
+
+        padding-top: 10px !important;
+        padding-bottom: 14px !important;
+    }
+
+    .passEyeIcon {
+
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+
+}
+
+@media (max-height:650px) and (min-width:992px) {
+
+    .redeemCardImage {
+        width: 100px !important;
+        height: 80px !important;
+    }
+
+    .splitPaymentMethod {
+        width: 170px !important;
+        height: 120px !important;
+    }
+
+    .splitPaymentCardMain {
+
+        margin-top: 10px 10px 0px 10px !important;
+    }
+
+    .creditCardImage {
+        width: 108px !important;
+        height: 100px !important;
+    }
+
+    .payByGiftCard {
+
+        width: 120px !important;
+        height: 80px !important;
+    }
+
+    .creditCardbtn {
+        margin-top: 0px !important;
+    }
+
+    .paypalsuccessMain {
+
+        margin-top: 20px !important;
+    }
+
+    .paypalsuccessInner {
+
+        padding: 10px !important;
+    }
+
+    .selectedCoursepriceBg {
+
+        width: 114px !important;
+        height: 60px !important;
+    }
+
+    .authorImage {
+
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .paypalLogo {
+
+        width: 60px !important;
+        height: 30px !important;
+    }
+
+
+    .giftCardLogo {
+
+        width: 80px !important;
+        height: 60px !important;
+    }
+
+    .splitPaymentLogo {
+
+        width: 80px !important;
+        height: 60px !important;
+    }
+
+    .passwordInput input {
+
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+
+    .formbg input {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+
+    .cardDetailForm {
+
+        margin-top: 3px !important;
+    }
+
+    .namelastnameInput {
+
+        margin-bottom: 3px !important;
+    }
+
+    .formTitle {
+
+        margin-top: 1px !important;
+        margin-bottom: 1px !important;
+
+    }
+
+    .checkoutFormMain {
+        margin-top: 0px !important;
+    }
+
+    .checkoutFormPassword {
+        padding-top: 5px !important;
+        padding-bottom: 5px !important;
+    }
+
+    .submitbtnbg {
+        margin-top: 6px !important;
+        margin-bottom: 12px px !important;
+        padding-bottom: 10px !important;
+        padding-top: 10px !important;
+    }
+
+    .checkIcon {
+
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+
+}
+
+@media (max-height:550px) and (min-width:992px) {
+
+    .splitPaymentMethod {
+        width: 130px !important;
+        height: 90px !important;
+    }
+
+    .creditCardImage {
+        width: 108px !important;
+        height: 80px !important;
+    }
+
+    .creditCardbtn {
+        margin-top: 0px !important;
+    }
+
+    .payByGiftCard {
+
+        width: 100px !important;
+        height: 60px !important;
+    }
+
+    .selectedCoursepriceBg {
+
+        width: 114px !important;
+        height: 60px !important;
+    }
+
+
+    .paypalLogo {
+
+        width: 60px !important;
+        height: 30px !important;
+    }
+
+    .giftCardLogo {
+
+        width: 80px !important;
+        height: 60px !important;
+    }
+
+    .splitPaymentLogo {
+
+        width: 80px !important;
+        height: 60px !important;
+    }
+
+    .authorComMain {
+
+        padding-bottom: 8px !important;
+        padding-top: 8px !important;
+    }
+
+    .authorCard {
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+    }
+
+    .refoundpolicyComp {
+
+        padding-bottom: 2px !important;
+        padding-top: 2px !important;
+    }
+
+    .checkIcon {
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    .refoundPcBtn {
+        padding-top: 2px !important;
+    }
+
+    .submitbtnbg {
+        margin-top: 6px !important;
+        margin-bottom: 12px px !important;
+        padding-bottom: 8px !important;
+        padding-top: 8px !important;
+    }
+}
+
+@media (max-height:450px) and (min-width:992px) {
+
+    .redeemCardImage {
+        width: 80px !important;
+        height: 60px !important;
+    }
+
+    .splitPaymentMethod {
+        width: 130px !important;
+        height: 80px !important;
+    }
+
+    .creditCardImage {
+        width: 108px !important;
+        height: 70px !important;
+    }
+
+    .creditCardbtn {
+        margin-top: 0px !important;
+
+    }
+
+    .payByGiftCard {
+
+        width: 90px !important;
+        height: 60px !important;
+    }
+
+    .congrateTitle {
+
+        padding-bottom: 5px !important;
+    }
+
+
+    .congfrateContinueBtn {
+
+        padding: 0px 0px 0px 0px;
+
+    }
+
+    .selectedCoursepriceBg {
+
+        width: 114px !important;
+        height: 60px !important;
+    }
+
+    .paypalLogo {
+
+        width: 60px !important;
+        height: 30px !important;
+    }
+
+
+    .giftCardLogo {
+
+        width: 80px !important;
+        height: 60px !important;
+    }
+
+    .splitPaymentLogo {
+
+        width: 80px !important;
+        height: 60px !important;
+    }
+
+    .namelastnameInput {
+
+        margin-bottom: 2px !important;
+    }
+
+
+    .formbg input {
+        padding-top: 3px !important;
+        padding-bottom: 3px !important;
+    }
+
+    .cardDetailForm {
+
+        margin-top: 0px !important;
+    }
+
+
+
+
+    /* checkoutform padding */
+
+    .formbg {
+
+        padding: 3px !important;
+    }
+
+    /* .passwordInput input {
+
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    } */
+
+    /* submitbtn */
+
+    .submitbtnbg {
+
+        margin-top: 2px !important;
+        margin-bottom: 6px !important;
+        padding-bottom: 2px !important;
+        padding-top: 2px !important;
+    }
+
+
+    .passEyeIcon {
+
+        width: 15px !important;
+        height: 14px !important;
+
+    }
+
+    .paypalPaymentsuccess {
+
+        padding-top: 10px !important;
+        padding-bottom: 10px !important;
+    }
+
+    /* research components */
+
+    .authorComMain {
+
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+    }
+
+    .authorCard {
+        padding-bottom: 0px !important;
+        padding-top: 0px !important;
+    }
+
+    .refoundpolicyComp {
+
+        padding-bottom: 2px !important;
+        padding-top: 2px !important;
+    }
+
+    .checkIcon {
+
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    .refoundPcBtn {
+        padding-top: 0px !important;
+    }
+
+    .giftbtnIcon {
+
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    .cvvzipSection {
+
+        margin-top: 0px !important;
+    }
+}
+
+@media (max-width:1280px) and (min-width:992px) {
+
+    .paymentDialog {
+        max-width: 750px !important;
+    }
+
+
+}
+
+@media (min-width:1280px) and (min-width:992px) {
+
+    .authorImage {
+
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+@media (min-width:992px) and (min-width:992px) {
+
+    .authorImage {
+
+        width: 30px !important;
+        height: 30px !important;
+    }
+}
+
+
+@media screen and (min-width:992px) {
+
+    .selectedCoursepriceBg {
+
+        width: 161px !important;
+        height: 75px !important;
+    }
+
+}

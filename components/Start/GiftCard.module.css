@@ -1,0 +1,144 @@
+.eGiftbg {
+    background: linear-gradient(180deg, #AC6CFF 0%, #6400E6 100%);
+    box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.42);
+    border-radius: 104px;
+    transition: 5000ms !important;
+}
+
+
+.eGiftbg:hover {
+    background: linear-gradient(180deg, #6400E6 0%, #AC6CFF 100%);
+    box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.42);
+    transition: 500ms;
+}
+
+
+/* responsive css for giftshoppe max-width */
+
+@media (max-width:1600px) {
+
+    .giftCardImage {
+
+        width: 300px !important;
+        height: 200px !important;
+    }
+
+    .giftIcon {
+        width: 50px !important;
+        height: 50px !important;
+    }
+}
+
+@media (max-width:1440px) {
+
+    .giftCardImage {
+
+        width: 280px !important;
+        height: 200px !important;
+    }
+
+    .giftIcon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+}
+
+@media (max-width:1366px) {
+
+    .giftCardImage {
+
+        width: 260px !important;
+        height: 180px !important;
+    }
+}
+
+@media (max-width:1280px) {
+
+    .giftCardImage {
+
+        width: 200px !important;
+        height: 150px !important;
+    }
+
+    .giftIcon {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+
+    .eGiftbg {
+        padding: 12px !important;
+        margin: 0px 20px 0px 20px !important;
+    }
+}
+
+@media (max-width:1024px) {
+
+    .giftCardImage {
+
+        width: 220px !important;
+        height: 150px !important;
+    }
+
+    .giftIcon {
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .eGiftbg {
+        padding: 12px !important;
+        margin: 0px 20px 0px 20px !important;
+    }
+}
+
+@media (max-width:992px) {
+
+    .eGiftbg {
+        padding: 12px !important;
+        margin: 0px 0px 0px 0px !important;
+    }
+}
+
+
+
+/* responsive css for giftshoppe max-width */
+
+
+@media (max-height:650px) {
+
+    .giftCardImage {
+
+        width: 220px !important;
+        height: 150px !important;
+    }
+
+    .giftCardContent {
+        margin-bottom: 10px !important;
+    }
+}
+
+@media (max-height:550px) {
+
+    .giftCardImage {
+
+        width: 200px !important;
+        height: 91px !important;
+    }
+
+    .giftCardContent {
+        margin-bottom: 5px !important;
+    }
+}
+
+@media (max-height:450px) {
+
+    .giftCardImage {
+
+        width: 203px !important;
+        height: 50px !important;
+    }
+
+    .giftCardContent {
+        margin-bottom: 5px !important;
+    }
+}

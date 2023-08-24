@@ -1,0 +1,1298 @@
+.gridMain {
+
+    transition: all ease-in-out 2s;
+    animation: transformUp 1s ease-in-out forwards;
+    position: relative;
+
+}
+
+.emptyBasketBg{
+    background: linear-gradient(180deg, #B6B6B6 0%, #6C6C6C 100%);
+}
+
+.gridMaincontent {
+    transition: all ease-in-out 2s;
+    animation-delay: 4s;
+    animation: transformUpcontetn 2s ease-in-out forwards;
+}
+
+/* scrollbar css */
+
+.giftListBg::-webkit-scrollbar {
+    width: 4px;
+
+    background-color: lightgrey;
+}
+
+.giftListBg::-webkit-scrollbar-thumb {
+    /* width: 25px; */
+    background-color: black !important;
+    border-radius: 0%;
+
+
+}
+
+/* line clamp  */
+
+.lineClampContent {
+
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    max-height: 150px;
+    overflow: hidden;
+    padding-right: 2px;
+
+}
+
+
+/* balence counter  */
+
+.counterMain {
+    width: 290.51px;
+    height: 98.6px;
+    background: linear-gradient(180deg, #AC6CFF 0%, #6400E6 100%);
+    border-radius: 7.53192px;
+    z-index: 5;
+
+}
+
+.counterInner {
+
+    border: 2.05416px solid #FFFFFF;
+    box-shadow: inset 0px 0px 24.6499px rgba(0, 0, 0, 0.43);
+    border-radius: 5.47776px;
+    z-index: 10;
+
+    width: 275.53px;
+    height: 85.23px;
+}
+
+.counterNumberEle {
+    background: linear-gradient(180deg, #C6C6C6 0%, #E7E7E7 10.42%, #FFFFFF 53.12%, #E1E1E1 87.5%, #C6C6C6 97.92%);
+    border-right: 0.68472px solid #7A7A7A;
+}
+
+
+@keyframes transformUpcontetn {
+
+    from {
+
+        opacity: 0;
+
+    }
+
+    to {
+
+
+        opacity: 1;
+    }
+}
+
+@keyframes transformUp {
+
+    from {
+        top: 100px;
+        /* opacity: 0; */
+
+    }
+
+    to {
+
+        top: 0;
+        /* opacity: 1; */
+    }
+}
+
+@media screen and (max-height:650px) {
+    .mainDivGrid {
+        padding: 8px;
+    }
+
+    .discriptionAnimation {
+        line-height: 100% !important;
+    }
+
+}
+
+
+.successScrollHide::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.successScrollHide {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+/* @media screen and (min-height:350px) {
+
+
+
+    .priceBack {
+        width: 57px !important;
+        height: 54px !important;
+        margin-bottom: 5px !important;
+    }
+
+
+} */
+
+@media screen and (min-height:651px) {
+
+
+    .mainDivGrid {
+        padding: auto;
+    }
+
+    /* .priceBack {
+        width: auto;
+        height: auto;
+        margin-bottom: auto;
+    } */
+
+}
+
+@media screen and (min-width:426px) {
+
+    .cardBackground {
+
+        background-color: rgba(128, 128, 128, 0.164);
+        /* color: #9747FF; */
+    }
+
+    .cardBackgroundHover:hover {
+
+        background-color: rgba(128, 128, 128, 0.164);
+        /* color: #9747FF; */
+        cursor: pointer;
+        z-index: 100;
+        transition: all ease-in-out 500ms;
+    }
+
+    .cardBackgroundHover {
+        background-color: transparent;
+        color: black;
+        cursor: pointer;
+        z-index: 100;
+        transition: all ease-in-out 500ms;
+    }
+
+
+}
+
+.hide1 {
+
+    display: none;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.cardBackgroundHover:hover .hide1 {
+
+    color: #9747FF;
+    transition: color 500ms ease-in;
+    animation: animateText 500ms linear both;
+    display: block;
+}
+
+@keyframes animateText {
+
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+        display: block;
+    }
+}
+
+.cardBackgroundHover .hide1 {
+
+    color: #9747FF;
+    transition: color 500ms ease-in;
+    animation: animateTextHide 500ms linear both;
+    display: block;
+}
+
+@keyframes animateTextHide {
+    from {
+        opacity: 1;
+        display: block;
+    }
+
+    to {
+        opacity: 0;
+    }
+}
+
+
+.cardBackgroundHover:hover>.discriptionAnimation {
+
+    transition: all ease 1000ms;
+    transform: translateY(-10px);
+    animation: FadeUpText 1000ms ease forwards;
+
+}
+
+.cardBackgroundHover>.discriptionAnimation {
+
+    transition: all ease 1000ms;
+    transform: translateY(0px);
+
+}
+
+
+.show1 {
+    display: block;
+    opacity: 1;
+    transition: all 1s ease-in-out;
+    animation: showAnimate 1s ease-in-out forwards;
+}
+
+@keyframes showAnimate {
+    from {
+        opacity: 0;
+        /* transform: translateY(100px); */
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+
+.fadeAnimation {
+    animation: fadeAnimate 1s ease-in-out;
+}
+
+@keyframes fadeAnimate {
+
+
+    from {
+        opacity: 0;
+        /* transform: translateY(100px); */
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeAnimationhide {
+    animation: fadeAnimatehide 1s ease;
+}
+
+@keyframes fadeAnimatehide {
+
+
+    from {
+        opacity: 1;
+    }
+
+    to {
+        opacity: 0;
+        /* transform: translateY(100px); */
+        width: 0;
+        height: 0;
+        visibility: hidden;
+    }
+}
+
+.submitbtnbg {
+
+    color: white;
+    background-color: black;
+    font-weight: bold;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.submitbtnbg:hover {
+
+    color: white;
+    background-color: #9747FF;
+    font-weight: bold;
+    transition: all 500ms ease-in-out;
+    cursor: pointer;
+}
+
+.hidescrollBar::-webkit-scrollbar {
+    display: none;
+}
+
+/* gift shoppi css  */
+.mainDiv>.gift {
+
+    background-image: url(/images/homeBlack.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    transition: all ease-in-out 500ms;
+    background-size: 180px;
+}
+
+.mainDiv:hover>.gift {
+
+    background-image: url(/images/homeColor.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    transition: all ease-in-out 500ms;
+    background-size: 180px;
+}
+
+/* giftShoppy Active */
+.activeGiftShoppy {
+
+    background-image: url(/images/homeColor.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    transition: all ease-in-out 500ms;
+    background-size: 180px;
+}
+
+/* giftShoppy Inactive */
+
+.inActiveGiftShoppy {
+
+    background-image: url(/images/homeBlack.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    object-fit: cover;
+    transition: all ease-in-out 500ms;
+    background-size: 180px;
+}
+
+/* course price image */
+
+.priceBack {
+    width: 85px;
+    height: 85px;
+    margin-bottom: 15px;
+}
+
+.giftListBg {
+    background: rgba(151, 71, 255, 0.07);
+}
+
+/* addto cart */
+.addtoCard {
+    position: absolute;
+    top: 160px;
+    left: 50%;
+}
+
+/* cart payment icon */
+
+/* .paymentIcon {
+
+    width: 140px !important;
+    height: 40px !important;
+} */
+
+
+@media(max-height:750px) and (min-width:992px) {
+    .mainDiv>.gift {
+        background-image: url(/images/homeBlack.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 140px !important;
+    }
+
+    .mainDiv:hover>.gift {
+        background-image: url(/images/homeColor.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 150px !important;
+    }
+}
+
+@media(max-height:992px) and (min-width:992px) {
+    .mainDiv>.gift {
+
+        background-image: url(/images/homeBlack.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 170px;
+    }
+
+    .mainDiv:hover>.gift {
+
+        background-image: url(/images/homeColor.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 180px;
+    }
+
+
+    .viewMoreIcon {
+        width: 22px !important;
+        height: 22px !important;
+    }
+
+    .addtoCard {
+        position: absolute;
+        top: 125px;
+        left: 50%;
+    }
+}
+
+@media(max-height:900px) and (min-width:992px) {
+
+    .viewMoreIcon {
+        width: 18px !important;
+        height: 18px !important;
+    }
+
+
+    .giftCountImg {
+
+        width: 40px !important;
+        height: 40px !important;
+    }
+
+    .giftCountMain {
+        padding: 3px !important;
+    }
+
+    .addGiftMain {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+        padding: 3px 16px 3px 16px !important;
+
+    }
+
+    .addtoCard {
+        position: absolute !important;
+        top: 112px !important;
+        left: 50% !important;
+    }
+}
+
+@media(max-height:840px) and (min-width:992px) {
+
+    .viewMoreIcon {
+        width: 18px !important;
+        height: 18px !important;
+
+    }
+
+
+    .giftCountImg {
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .giftCountMain {
+        padding: 5px !important;
+    }
+
+    .addGiftMain {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+        padding: 3px 16px 3px 16px !important;
+
+    }
+
+    .addtoCard {
+        position: absolute !important;
+        top: 112px !important;
+        left: 50% !important;
+    }
+
+    .giftAddedList {
+        padding: 0px 12px 0px 12px !important;
+        height: 70px !important;
+    }
+}
+
+@media (max-height:750px) and (min-width:992px) {
+
+    .mainDiv>.gift {
+
+        background-image: url(/images/homeBlack.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 100px !important;
+    }
+
+    .mainDiv:hover>.gift {
+
+        background-image: url(/images/homeColor.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 125px !important;
+    }
+
+    /* giftShoppy Active */
+    .activeGiftShoppy {
+
+        background-image: url(/images/homeColor.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 140px !important;
+    }
+
+    /* giftShoppy Inactive */
+
+    .inActiveGiftShoppy {
+
+        background-image: url(/images/homeBlack.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 140px !important;
+
+    }
+
+    .deleteIcon {
+
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .emailspaing {
+
+        padding-bottom: 10px!important;
+        padding-top: 10px!important;
+
+        margin-top: 6px !important;
+    }
+
+    .addedItemList {
+
+        padding: 5px 4px 12px 4px !important;
+
+        margin: 6px 20px 6px 20px !important;
+    }
+
+    .viewMoreIcon {
+        width: 15px !important;
+        height: 15px !important;
+
+    }
+
+    .giftAddedList {
+        padding: 0px 12px 0px 12px !important;
+        height: 70px !important;
+    }
+
+    .giftCountImg {
+
+        width: 30px !important;
+        height: 30px !important;
+    }
+
+    .giftCountMain {
+        padding: 5px !important;
+    }
+
+    .addGiftMain {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+        padding: 3px 16px 3px 16px !important;
+
+    }
+
+    .editIcon {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .editComp {
+
+        margin-bottom: 0px 0px 0px 0px !important;
+    }
+
+    .paymentIcongiftShoppe {
+        width: 45px !important;
+        height: 45px !important;
+
+    }
+
+    .addtoCard {
+        position: absolute !important;
+        top: 100px !important;
+        left: 50% !important;
+    }
+
+
+}
+
+@media (max-height:650px) and (min-width:992px) {
+
+    /* gift shoppi css  */
+
+    .mainDiv>.gift {
+
+        background-image: url(/images/homeBlack.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 100px !important;
+    }
+
+    .mainDiv:hover>.gift {
+
+        background-image: url(/images/homeColor.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 125px !important;
+    }
+
+    /* giftShoppy Active */
+    .activeGiftShoppy {
+
+        background-image: url(/images/homeColor.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 120px !important;
+    }
+
+    /* giftShoppy Inactive */
+
+    .inActiveGiftShoppy {
+
+        background-image: url(/images/homeBlack.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 120px !important;
+
+    }
+
+    .deleteIcon {
+
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .backIcon {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .submitbtnbg {
+
+        padding: 4px 5px 3px 5px !important;
+    }
+
+    .paymentIcon {
+
+        width: 39px !important;
+        height: 30px !important;
+
+    }
+
+    .priceBack {
+        width: 60px !important;
+        height: 60px !important;
+        margin-bottom: 15px !important;
+    }
+
+
+    .emailspaing {
+
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+
+    .addedItemList {
+
+        padding: 5px 4px 15px 4px !important;
+
+        margin: 6px 20px 6px 20px !important;
+    }
+
+    .viewMoreIcon {
+        width: 15px !important;
+        height: 15px !important;
+
+    }
+
+
+    .giftCountImg {
+
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .giftCountMain {
+        padding: 3px !important;
+    }
+
+    .addGiftMain {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+        padding: 3px 16px 3px 16px !important;
+
+    }
+
+    .editComp {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+    }
+
+    .counterComp {
+        position: absolute;
+        width: 15px !important;
+        height: 15px !important;
+        left: 20px !important;
+    }
+
+    .paymentOptionMain {
+
+        padding-bottom: 0px !important;
+    }
+
+    .giftAddedList {
+        height: 73px !important;
+    }
+
+}
+
+@media (max-height:550px) and (min-width:992px) {
+    /* gift shoppi css  */
+
+    .mainDiv>.gift {
+
+        background-image: url(/images/homeBlack.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 75px !important;
+    }
+
+    .mainDiv:hover>.gift {
+
+        background-image: url(/images/homeColor.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 80px !important;
+    }
+
+    /* giftShoppy Active */
+    .activeGiftShoppy {
+
+        background-image: url(/images/homeColor.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 80px !important;
+    }
+
+    /* giftShoppy Inactive */
+
+    .inActiveGiftShoppy {
+
+        background-image: url(/images/homeBlack.svg) !important;
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 80px !important;
+
+    }
+
+    .priceBack {
+        width: 60px !important;
+        height: 60px !important;
+        margin-bottom: 8px !important;
+    }
+
+    /* title main simply choose */
+
+    .titleMain {
+
+        margin-top: 70px !important;
+        padding-top: 0px;
+    }
+
+    .backIcon {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .submitbtnbg {
+
+        padding: 3px 5px 3px 5px !important;
+    }
+
+    .paymentIcon {
+
+        width: 60px !important;
+        height: 40px !important;
+
+    }
+
+    .emailspaing {
+
+        padding-bottom: 5px !important;
+        padding-top: 5px !important;
+
+        margin-top: 5px !important;
+        margin-bottom: 3px !important;
+    }
+
+    .checkoutIcon {
+        width: 20px !important;
+        height: 20px !important;
+    }
+
+    .addedItemList {
+
+        padding: 5px 4px 10px 4px !important;
+
+        margin: 6px 20px 6px 20px !important;
+    }
+
+    .viewMoreIcon {
+        width: 15px !important;
+        height: 15px !important;
+
+    }
+
+
+    .giftAddedList {
+        padding: 0px 12px 0px 12px !important;
+
+        height: 60px !important;
+    }
+
+    .giftCountImg {
+
+        width: 10px !important;
+        height: 10px !important;
+    }
+
+    .giftCountMain {
+        padding: 2px !important;
+    }
+
+    .addGiftMain {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+        padding: 3px 16px 3px 16px !important;
+
+    }
+
+    .editComp {
+        margin-bottom: 0px !important;
+        margin-top: 0px !important;
+    }
+
+    .counterComp {
+        position: absolute;
+        width: 13px !important;
+        height: 13px !important;
+        left: 15px !important;
+    }
+
+    .paymentOptionMain {
+
+        padding-bottom: 0px !important;
+    }
+
+    .editIcon {
+        width: 12px !important;
+        height: 12px !important;
+    }
+
+    .paymentIcongiftShoppe {
+        width: 30px !important;
+        height: 30px !important;
+
+    }
+
+    .readyToCheckoutBg {
+        margin-top: 4px !important;
+    }
+
+    .readyToCheckoutBgInner {
+
+        padding-bottom: 2px !important;
+        padding-top: 2px !important;
+    }
+
+}
+
+@media (max-height:450px) and (min-width:992px) {
+
+    .priceBack {
+        width: 50px !important;
+        height: 50px !important;
+        margin-bottom: 8px !important;
+    }
+
+    .cartIcon {
+        width: 30px !important;
+        height: 30px !important
+    }
+
+    .backIcon {
+        width: 15px !important;
+        height: 15px !important;
+    }
+
+    .submitbtnbg {
+
+        padding: 3px 5px 3px 5px !important;
+    }
+
+    .paymentIcon {
+
+        width: 30px !important;
+        height: 20px !important;
+
+    }
+
+    .addedItemList {
+
+        padding: 3px 4px 10px 4px !important;
+
+        margin: 2px 20px 2px 20px !important;
+    }
+
+    .readyToCheckoutBg {
+
+        margin-top: 10px !important;
+    }
+
+    .viewMoreIcon {
+        width: 15px !important;
+        height: 15px !important;
+
+    }
+
+    .giftAddedList {
+        padding: 0px 12px 0px 12px !important;
+
+        max-height: 30px !important;
+    }
+
+    .emailspaing {
+
+        padding-bottom: 3px !important;
+        padding-top: 3px !important;
+        margin-top: 5px !important;
+        margin-bottom: 3px !important;
+    }
+
+}
+
+/* media query max-width */
+
+@media (max-width:1280px) and (min-width:992px) {
+
+    .mainDiv>.gift {
+
+        background-image: url(/images/homeBlack.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 150px;
+    }
+
+    .mainDiv:hover>.gift {
+
+        background-image: url(/images/homeColor.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 150px;
+    }
+
+    /* giftShoppy Active */
+    .activeGiftShoppy {
+
+        background-image: url(/images/homeColor.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 150px;
+    }
+
+    /* giftShoppy Inactive */
+
+    .inActiveGiftShoppy {
+
+        background-image: url(/images/homeBlack.svg);
+        background-repeat: no-repeat;
+        background-position: center;
+        object-fit: cover;
+        transition: all ease-in-out 500ms;
+        background-size: 150px;
+
+    }
+}
+
+@media screen and (max-width:640px) {}
+
+@media screen and (max-width:991px) {
+    .PaymentIconMob {
+
+        width: 150px;
+
+    }
+
+}
+
+@media screen and (min-width:992px) {
+
+
+
+    .priceBack {
+
+        width: 69px;
+        height: 73px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width:1024px) {
+
+    .priceBack {
+
+        width: 69px;
+        height: 73px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width:1280px) {
+
+    .priceBack {
+
+        width: 69px;
+        height: 73px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width:1366px) {
+
+    .priceBack {
+
+        width: 69px;
+        height: 73px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width:1440px) {
+
+    .priceBack {
+
+        width: 69px;
+        height: 73px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width:1600px) {
+
+    .priceBack {
+
+        width: 69px;
+        height: 73px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media screen and (min-width:1750px) {
+
+    .priceBack {
+
+        width: 69px !important;
+        height: 73px !important;
+        margin-bottom: 15px !important;
+    }
+
+}
+
+@media screen and (min-width:1850px) {
+
+    .priceBack {
+
+        width: 90px !important;
+        height: 102px !important;
+        margin-bottom: 15px !important;
+    }
+
+}
+
+@media screen and (min-width:1920px) {
+
+    .priceBack {
+
+        width: 111px !important;
+        height: 106px !important;
+        margin-bottom: 15px !important;
+    }
+
+}
+
+
+/* resposive media query for tablet */
+
+
+/* @media screen and (min-width:550px) {
+
+    .paymentIcon {
+
+        width: 200px;
+        height: 200px;
+    }
+} */
+
+
+
+
+.coursePriceSelectedBg {
+
+    /* background: linear-gradient(180deg, #AC6CFF 0%, #6400E6 100%); */
+    box-shadow: 0px 12px 28px rgba(0, 0, 0, 0.42);
+}
+
+.emptyBasketTotalAmt {
+
+    background: linear-gradient(180deg, #B6B6B6 0%, #6C6C6C 100%);
+}
+
+.readyToCheckoutBg {
+
+    background: linear-gradient(180deg, #AC6BFF 0%, #7721E8 100%);
+}
+
+/* toggle animation */
+
+
+.toggleOn {
+    animation: toggleOn ease-in-out 500ms forwards;
+    transition: all ease-in-out 500ms;
+}
+
+@keyframes toggleOn {
+
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
+
+}
+
+
+.toggleOff {
+    animation: toggleOff ease-in-out 500ms forwards;
+    transition: all ease-in-out 500ms;
+}
+
+@keyframes toggleOff {
+
+    from {
+        transform: rotate(180deg);
+    }
+
+    to {
+        transform: rotate(0deg);
+    }
+
+}
+
+.paymentCardHide{
+    display: none;
+    transition: display ease-in 500ms;
+}
+.paymentCardShow{
+    display: block;
+    transition: display ease-in 500ms;
+}
+
+
+
+.image_wrapper {
+    height: auto;
+    width: auto;
+    border-radius: 6px;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    line-height: 1.6;
+}
+
+
+.shine {
+    position: relative;
+    overflow: hidden;
+}
+
+.shine::before {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.3) 100%);
+    content: "";
+    display: block;
+    height: 100%;
+    left: -75%;
+    position: absolute;
+    top: 0;
+    transform: skewX(-25deg);
+    width: 50%;
+    z-index: 2;
+}
+
+.shine:hover::before,
+.shine:focus::before {
+    animation: shine 0.85s;
+}
+
+@keyframes shine {
+    100% {
+        left: 125%;
+    }
+}

@@ -1,0 +1,29 @@
+@media (max-height:500px) {
+
+
+    .main {
+
+        padding: 4px 0px 4px !important;
+    }
+
+    .loginmodelInput {
+
+        padding: 4px 14px 0px !important;
+
+        margin-top: 2px;
+    }
+
+    .reminderMe {
+
+        padding: 4px 0px 4px !important;
+    }
+
+    .loginBtn {
+
+        margin: 4px 0px 0px 0px !important;
+    }
+
+    .title {
+        padding-bottom: 4px !important;
+    }
+}
